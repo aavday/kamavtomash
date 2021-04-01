@@ -48,13 +48,60 @@ global $USER;
             )
           );?>
           <div class="header__town"><a class="header__town__select select-town" data-toggle="modal" data-target="#selectTownModal">Набережные Челны</a><br/>
-            <p class="header__town__text text-adress">ул. Раскольникова, 79, офис 5А</p>
+            <p class="header__town__text text-adress">
+              <?$APPLICATION->IncludeComponent("bitrix:main.include","",Array(
+                  "AREA_FILE_SHOW" => "file", 
+                  "PATH" => "/includes/address.php"
+                )
+              );?>
+            </p>
           </div>
-          <div class="header__contact"><a class="header__contact__select select-phone" id="phoneDropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">8 (8552) 20-07-20</a>
-            <div class="dropdown-menu phone-dropdown" aria-labelledby="phoneDropdownMenu"><a class="phone-dropdown__phone" href="tel:88552200720">8 (8552) 20-07-20<br></a><a class="phone-dropdown__phone" href="tel:89673790720">8 (967) 379-07-20</a>
+          <div class="header__contact">
+            <a class="header__contact__select select-phone" id="phoneDropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <?$APPLICATION->IncludeComponent("bitrix:main.include","",Array(
+                  "AREA_FILE_SHOW" => "file", 
+                  "PATH" => "/includes/phone_main.php"
+                )
+              );?>
+            </a>
+            <div class="dropdown-menu phone-dropdown" aria-labelledby="phoneDropdownMenu">
+              <a class="phone-dropdown__phone" href="<?$APPLICATION->IncludeComponent("bitrix:main.include","",Array(
+                    "AREA_FILE_SHOW" => "file", 
+                    "PATH" => "/includes/phone_main.php"
+                  )
+                );?>">
+                <?$APPLICATION->IncludeComponent("bitrix:main.include","",Array(
+                    "AREA_FILE_SHOW" => "file", 
+                    "PATH" => "/includes/phone_main.php"
+                  )
+                );?>
+                <br>
+              </a>
+              <a class="phone-dropdown__phone" href="tel:<?$APPLICATION->IncludeComponent("bitrix:main.include","",Array(
+                    "AREA_FILE_SHOW" => "file", 
+                    "PATH" => "/includes/phone_secondary.php"
+                  )
+                );?>">
+                <?$APPLICATION->IncludeComponent("bitrix:main.include","",Array(
+                    "AREA_FILE_SHOW" => "file", 
+                    "PATH" => "/includes/phone_secondary.php"
+                  )
+                );?>
+              </a>
               <p class="phone-dropdown__time">Пн-Сб 8:00 - 18:00</p>
               <button class="phone-dropdown__btn" data-toggle="modal" data-target="#contactModal">Оставить заявку</button>
-            </div><br/><a class="header__contact__text text-mail" href="mailto:kam-info@mail.ru">kam-info@mail.ru</a>
+            </div><br/>
+            <a class="header__contact__text text-mail" href="mailto:<?$APPLICATION->IncludeComponent("bitrix:main.include","",Array(
+                  "AREA_FILE_SHOW" => "file", 
+                  "PATH" => "/includes/email.php"
+                )
+              );?>">
+                <?$APPLICATION->IncludeComponent("bitrix:main.include","",Array(
+                    "AREA_FILE_SHOW" => "file", 
+                    "PATH" => "/includes/email.php"
+                  )
+                );?>
+            </a>
           </div>
         </div>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">

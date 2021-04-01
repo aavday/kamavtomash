@@ -227,8 +227,48 @@ $APPLICATION->SetTitle('Главная');
           <div class="contact__block">
             <h3 class="contact__block__title">Контакты </h3>
             <div class="contact__block__town"><a class="contact__block__town__select" data-toggle="modal" data-target="#selectTownModal">Набережные Челны</a><br/>
-              <p class="contact__block__town__text">ул. Раскольникова, 79, офис 5А</p>
-            </div><a class="contact__block__phone" href="tel:88552200720">8 (8552) 20-07-20</a><br><a class="contact__block__phone" href="tel:89673790720">8 (967) 379-07-20</a><br><a class="contact__block__mail" href="mailto:kam-info@mail.ru">kam-info@mail.ru</a><br>
+              <p class="contact__block__town__text">
+                <?$APPLICATION->IncludeComponent("bitrix:main.include","",Array(
+                    "AREA_FILE_SHOW" => "file", 
+                    "PATH" => "/includes/address.php"
+                  )
+                );?>
+              </p>
+            </div>
+              <a class="contact__block__phone" href="tel:<?$APPLICATION->IncludeComponent("bitrix:main.include","",Array(
+                    "AREA_FILE_SHOW" => "file", 
+                    "PATH" => "/includes/phone_main.php"
+                  )
+                );?>"
+                >
+                <?$APPLICATION->IncludeComponent("bitrix:main.include","",Array(
+                    "AREA_FILE_SHOW" => "file", 
+                    "PATH" => "/includes/phone_main.php"
+                  )
+                );?>
+              </a><br>
+              <a class="contact__block__phone" href="<?$APPLICATION->IncludeComponent("bitrix:main.include","",Array(
+                    "AREA_FILE_SHOW" => "file", 
+                    "PATH" => "/includes/phone_secondary.php"
+                  )
+                );?>">
+                <?$APPLICATION->IncludeComponent("bitrix:main.include","",Array(
+                    "AREA_FILE_SHOW" => "file", 
+                    "PATH" => "/includes/phone_secondary.php"
+                  )
+                );?>
+              </a><br>
+              <a class="contact__block__mail" href="mailto:<?$APPLICATION->IncludeComponent("bitrix:main.include","",Array(
+                    "AREA_FILE_SHOW" => "file", 
+                    "PATH" => "/includes/email.php"
+                  )
+                );?>">
+                <?$APPLICATION->IncludeComponent("bitrix:main.include","",Array(
+                    "AREA_FILE_SHOW" => "file", 
+                    "PATH" => "/includes/email.php"
+                  )
+                );?>
+              </a><br>
             <button class="contact__block__btn" data-toggle="modal" data-target="#contactModal">Оставить заявку</button>
           </div>
         </div>
