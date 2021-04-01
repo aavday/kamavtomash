@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Kam</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" type="text/css" href="libs/css-libs.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/bundle.min.css"/>
+  </head>
+  <body>
+    <div id="preloader">
+      <div class="loader-container"></div>
+    </div>
+    <header class="header">
+      <nav class="navbar navbar-expand-lg"><a class="logo" href="/"><img src="images/icons/logo.png" alt="Логотип компании"/></a>
+        <div class="collapse navbar-collapse" id="navbarHeader">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="#">О компании</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">JOTUN</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Огнезащита декотерм</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Проекты</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Отзывы</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Контакты</a></li>
+          </ul>
+          <div class="header__town"><a class="header__town__select select-town" data-toggle="modal" data-target="#selectTownModal">Набережные Челны</a><br/>
+            <p class="header__town__text text-adress">ул. Раскольникова, 79, офис 5А</p>
+          </div>
+          <div class="header__contact"><a class="header__contact__select select-phone" id="phoneDropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">8 (8552) 20-07-20</a>
+            <div class="dropdown-menu phone-dropdown" aria-labelledby="phoneDropdownMenu"><a class="phone-dropdown__phone" href="tel:88552200720">8 (8552) 20-07-20<br></a><a class="phone-dropdown__phone" href="tel:89673790720">8 (967) 379-07-20</a>
+              <p class="phone-dropdown__time">Пн-Сб 8:00 - 18:00</p>
+              <button class="phone-dropdown__btn" data-toggle="modal" data-target="#contactModal">Оставить заявку</button>
+            </div><br/><a class="header__contact__text text-mail" href="mailto:kam-info@mail.ru">kam-info@mail.ru</a>
+          </div>
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+          <div class="menu"><span class="bar"></span><span class="bar"></span></div>
+        </button>
+      </nav>
+    </header>
+    <div id="main">
+      <section class="greeting">
+        <div class="container"> 
+          <div class="row">
+            <div class="col-lg-6 col-xl-6">
+              <h1 class="greeting__title">Антикоррозийная<br> защита</h1>
+              <ul class="greeting__list">
+                <li>Нефтегазовой отрасли</li>
+                <li>Общепромышленном строительстве</li>
+                <li>Мостовых сооружениях</li>
+              </ul>
+            </div>
+            <div class="col-lg-6 col-xl-6"><img class="greeting__img" src="images/greeting-img.png" alt="Greeting img"/></div>
+          </div>
+        </div>
+      </section>
+      <section class="about">
+        <div class="container">
+          <div class="about__wrapper"><a class="subtitle" href="#">О компании</a>
+            <div class="row">
+              <div class="col-xl-6">
+                <div class="about__text">Компания <b>ООО "КамАвтоМаш"</b> – официальный дистрибьютер:
+                  <div class="about__logos"><img src="images/about/about-logo-1.png" alt="Лого 1"/><img src="images/about/about-logo-2.png" alt="Лого 2"/></div>
+                </div>
+                <p class="about__text">Компания <b>ООО "КамАвтоМаш"</b> основана в 2012 году. Наша компания осуществляет поставку высококачественных лакокрасочных материалов Jotun.</p>
+              </div>
+              <div class="col-xl-6">
+                <p class="about__text">Мы обеспечиваем индивидуальный подход к каждому клиенту, проводя полный комплекс услуг по антикоррозийной защите и сопровождение проекта от начала и до его полного завершения.</p>
+                <p class="about__text">С 2015 года <b>ООО "КамАвтоМаш"</b> начал активное развитие направления огнезащиты.</p>
+              </div>
+              <div class="col-6 col-xl-3"><img class="about__img" src="images/about/about-img-1.jpg" alt="картинка о компании 1"/></div>
+              <div class="col-6 col-xl-3"><img class="about__img" src="images/about/about-img-2.jpg" alt="картинка о компании 2"/></div>
+              <div class="col-6 col-xl-3"><img class="about__img" src="images/about/about-img-3.jpg" alt="картинка о компании 3"/></div>
+              <div class="col-6 col-xl-3"><img class="about__img" src="images/about/about-img-4.jpg" alt="картинка о компании 4"/></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="brands">
+        <div class="jotun">
+          <div class="container"> 
+            <div class="row">
+              <div class="col-lg-6 offset-xl-1 col-xl-5"><a class="subtitle" href="#">Jotun</a>
+                <p>Компания Йотун, основанная 1926 году в Норвегии, на сегодняшний день является одной из фирм, лидирующих на мировом рынке в области разработки и производства промышленных лакокрасочных покрытий.</p>
+                <p>Лаборатории компании оснащены сверхсовременным оборудованием, позволяющим получать уникальные результаты исследований для производства новых красок.</p>
+                <p>Значительное место в этих исследованиях отводится изучению влияния краски на окружающую среду и здоровье человека. Поэтому характеристики покрытий превосходят жесткие требования европейских институтов по охране окружающей среды.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="decoterm">
+          <div class="container"> 
+            <div class="row">
+              <div class="offset-lg-6 col-lg-6 offset-xl-6 col-xl-6"><a class="subtitle" href="#"> <span>Огнезащита Декотерм</span></a>
+                <p>Краски серии «Декотерм» получили свое название благодаря хорошим технологическим характеристикам и декоративным свойствам образующихся покрытий, помимо стандартных огнезащитных свойств самого материала. Все материалы сертифицированы: получены сертификаты пожарной безопасности и санитарно-эпидемиологические заключения. При производстве материалов «Декотерм» особое внимание уделяется как тщательному контролю всех входящих сырьевых компонентов, так и непосредственным мельчайшим деталям технологического процесса и контроля полученного продукта.</p>
+                <p>Краски «Декотерм» неоднократно использовались на различных объектах промышленного и гражданского профиля по всей России, в том числе, совместно с российскими и импортными антикоррозийными материалами.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="fire-protection">
+        <div class="container"> 
+          <div class="row">
+            <div class="col-lg-7 offset-xl-1 col-xl-5"><a class="subtitle" href="#">Огнезащита</a>
+              <p>Огнезащита — технические мероприятия, направленные на повышение огнестойкости и (или) снижение пожарной опасности зданий, сооружений, строительных конструкций (ГОСТ Р 53295—2009 СРЕДСТВА ОГНЕЗАЩИТЫ ДЛЯ СТАЛЬНЫХ КОНСТРУКЦИЙ)</p>
+              <div class="fire-protection__use">
+                <h4>Области применения огнезащитных красок:</h4>
+                <div class="row">
+                  <div class="col-6 col-sm-4 col-xl-4">
+                    <div class="fire-protection__use__item">
+                      <div class="fire-protection__use__img img-1"></div>
+                      <h5 class="fire-protection__use__name">ПРОМЫШЛЕННОЕ<br> СТРОИТЕЛЬСТВО</h5>
+                    </div>
+                  </div>
+                  <div class="col-6 col-sm-4 col-xl-4">
+                    <div class="fire-protection__use__item">
+                      <div class="fire-protection__use__img img-2"></div>
+                      <h5 class="fire-protection__use__name">ГРАЖДАНСКОЕ<br> СТРОИТЕЛЬСТВО</h5>
+                    </div>
+                  </div>
+                  <div class="col-6 col-sm-4 col-xl-4">
+                    <div class="fire-protection__use__item">
+                      <div class="fire-protection__use__img img-3"></div>
+                      <h5 class="fire-protection__use__name">ТРАНСПОРТНЫЕ<br> УЗЛЫ</h5>
+                    </div>
+                  </div>
+                  <div class="col-6 col-sm-4 col-xl-4">
+                    <div class="fire-protection__use__item">
+                      <div class="fire-protection__use__img img-4"></div>
+                      <h5 class="fire-protection__use__name">НЕФТЕГАЗОВЫЙ<br> СЕКТОР</h5>
+                    </div>
+                  </div>
+                  <div class="col-6 col-sm-4 col-xl-4">
+                    <div class="fire-protection__use__item">
+                      <div class="fire-protection__use__img img-5"></div>
+                      <h5 class="fire-protection__use__name">ЭНЕРГЕТИЧЕСКИЙ<br> СЕКТОР</h5>
+                    </div>
+                  </div>
+                  <div class="col-6 col-sm-4 col-xl-4">
+                    <div class="fire-protection__use__item">
+                      <div class="fire-protection__use__img img-6"></div>
+                      <h5 class="fire-protection__use__name">ХИМИЧЕСКИЕ<br> ПРОИЗВОДСТВА</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="project">
+        <div class="container"> 
+          <div class="project__wrapper"><a class="subtitle" href="#">Проекты</a>
+            <div class="owl-carousel owl-theme" id="project-slider">
+              <div class="project__item">
+                <div class="project__item__img"><img src="images/project/project-img-1.jpg" alt="Проект 1"/></div>
+                <div class="project__item__content"><img class="project__item__logo" src="images/icons/project-logo-1.jpg" alt="Проект 1 лого"/>
+                  <h4 class="project__item__name">ПАО «Нижнекамскнефтехим»</h4>
+                  <ul class="project__item__list">
+                    <li><span class="project__item__list__preword">город</span>
+                      <p>Нижнекамск</p>
+                    </li>
+                    <li> <span class="project__item__list__preword">год</span>
+                      <p>2018 - 2019 гг.</p>
+                    </li>
+                    <li> <span class="project__item__list__preword">материал</span>
+                      <p>ДЕКОТЕРМ-ЭПОКСИ</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="project__item">
+                <div class="project__item__img"><img src="images/project/project-img-2.jpg" alt="Проект 2"/></div>
+                <div class="project__item__content"><img class="project__item__logo" src="images/icons/project-logo-2.jpg" alt="Проект 2 лого"/>
+                  <h4 class="project__item__name">ОАО «ТАИФ-НК», КГПТО</h4>
+                  <ul class="project__item__list">
+                    <li><span class="project__item__list__preword">город</span>
+                      <p>Нижнекамск</p>
+                    </li>
+                    <li> <span class="project__item__list__preword">год</span>
+                      <p>2016 - 2017 гг.</p>
+                    </li>
+                    <li> <span class="project__item__list__preword">материал</span>
+                      <p>ДЕКОТЕРМ-ЭПОКСИ</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="project__item">
+                <div class="project__item__img"><img src="images/project/project-img-3.jpg" alt="Проект 3"/></div>
+                <div class="project__item__content"><img class="project__item__logo" src="images/icons/project-logo-3.jpg" alt="Проект 3 лого"/>
+                  <h4 class="project__item__name">Завод двигателей «КАМАЗ»</h4>
+                  <ul class="project__item__list">
+                    <li><span class="project__item__list__preword">город</span>
+                      <p>Набережные Челны</p>
+                    </li>
+                    <li> <span class="project__item__list__preword">год</span>
+                      <p>2014 - 2017 гг.</p>
+                    </li>
+                    <li> <span class="project__item__list__preword">материал</span>
+                      <p>ДЕКОТЕРМ, ДЕКОТЕРМ-КОП</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="project__item">
+                <div class="project__item__img"><img src="images/project/project-img-4.jpg" alt="Проект 4"/></div>
+                <div class="project__item__content"><img class="project__item__logo" src="images/icons/project-logo-4.jpg" alt="Проект 4 лого"/>
+                  <h4 class="project__item__name">ТЭЦ № 2</h4>
+                  <ul class="project__item__list">
+                    <li><span class="project__item__list__preword">город</span>
+                      <p>Ростов-на-Дону</p>
+                    </li>
+                    <li> <span class="project__item__list__preword">год</span>
+                      <p>2016 г.</p>
+                    </li>
+                    <li> <span class="project__item__list__preword">материал</span>
+                      <p>ДЕКОТЕРМ-КОП</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="project__item">
+                <div class="project__item__img"><img src="images/project/project-img-5.jpg" alt="Проект 5"/></div>
+                <div class="project__item__content"><img class="project__item__logo" src="images/icons/project-logo-5.jpg" alt="Проект 5 лого"/>
+                  <h4 class="project__item__name">ТЭЦ № 2 ЛАЭС</h4>
+                  <ul class="project__item__list">
+                    <li><span class="project__item__list__preword">город</span>
+                      <p>Санкт-Петербург</p>
+                    </li>
+                    <li> <span class="project__item__list__preword">год</span>
+                      <p>2013 г.</p>
+                    </li>
+                    <li> <span class="project__item__list__preword">материал</span>
+                      <p>ДЕКОТЕРМ, ДЕКОТЕРМ-Р</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="project__item">
+                <div class="project__item__img"><img src="images/project/project-img-6.jpg" alt="Проект 6"/></div>
+                <div class="project__item__content"><img class="project__item__logo" src="images/icons/project-logo-6.jpg" alt="Проект 6 лого"/>
+                  <h4 class="project__item__name">ТЭЦ № 20</h4>
+                  <ul class="project__item__list">
+                    <li><span class="project__item__list__preword">город</span>
+                      <p>Москва</p>
+                    </li>
+                    <li> <span class="project__item__list__preword">год</span>
+                      <p>2014 - 2016 гг.</p>
+                    </li>
+                    <li> <span class="project__item__list__preword">материал</span>
+                      <p>ДЕКОТЕРМ, ДЕКОТЕРМ-КОП</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contact">
+        <div class="container"> 
+          <div class="contact__block">
+            <h3 class="contact__block__title">Контакты </h3>
+            <div class="contact__block__town"><a class="contact__block__town__select" data-toggle="modal" data-target="#selectTownModal">Набережные Челны</a><br/>
+              <p class="contact__block__town__text">ул. Раскольникова, 79, офис 5А</p>
+            </div><a class="contact__block__phone" href="tel:88552200720">8 (8552) 20-07-20</a><br><a class="contact__block__phone" href="tel:89673790720">8 (967) 379-07-20</a><br><a class="contact__block__mail" href="mailto:kam-info@mail.ru">kam-info@mail.ru</a><br>
+            <button class="contact__block__btn" data-toggle="modal" data-target="#contactModal">Оставить заявку</button>
+          </div>
+        </div>
+        <div class="map">
+          <div id="map-card"></div>
+        </div>
+      </section>
+    </div>
+    <footer class="footer sticky_footer">
+      <div class="footer__left"><a class="footer-logo" href="/"><img src="images/icons/logo-footer.png" alt="Логотип компании"/></a>
+        <p class="copyright"> &copy; 2021 КамАвтоМаш. Все права защищены.</p>
+      </div><a class="itchelny" href="https://www.itchelny.ru/">
+        <p>Создание и поддержка –</p><img src="images/icons/itchelny-logo.png" alt="Логотип ITChelny"/></a>
+    </footer>
+    <div class="modal modal-town fade" id="selectTownModal" tabindex="-1" aria-labelledby="selectTownModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="selectTownModalLabel">Выбор города</h5>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body">
+            <ul class="modal-town__list">
+              <li><a class="modal-town__link" href="#">Азнакаево</a></li>
+              <li><a class="modal-town__link" href="#">Альметьевск</a></li>
+              <li><a class="modal-town__link" href="#">Бавлы</a></li>
+              <li><a class="modal-town__link" href="#">Бугульма</a></li>
+              <li><a class="modal-town__link" href="#">Волгоград</a></li>
+              <li><a class="modal-town__link" href="#">Воронеж</a></li>
+              <li><a class="modal-town__link" href="#">Джалиль</a></li>
+              <li><a class="modal-town__link" href="#">Екатеринбург</a></li>
+              <li><a class="modal-town__link" href="#">Елабуга</a></li>
+              <li><a class="modal-town__link" href="#">Заинск</a></li>
+              <li><a class="modal-town__link" href="#">Ижевск</a></li>
+              <li><a class="modal-town__link" href="#">Иркутск</a></li>
+              <li><a class="modal-town__link" href="#">Казань</a></li>
+              <li><a class="modal-town__link" href="#">Краснодар</a></li>
+              <li><a class="modal-town__link" href="#">Красноярск</a></li>
+              <li><a class="modal-town__link" href="#">Лениногорск</a></li>
+              <li><a class="modal-town__link" href="#">Менделеевск</a></li>
+              <li><a class="modal-town__link" href="#">Москва</a></li>
+              <li><a class="modal-town__link active" href="#">Набережные Челны</a></li>
+              <li><a class="modal-town__link" href="#">Нижнекамск</a></li>
+              <li><a class="modal-town__link" href="#">Нижний Новгород</a></li>
+              <li><a class="modal-town__link" href="#">Нурлат</a></li>
+              <li><a class="modal-town__link" href="#">Омск</a></li>
+              <li><a class="modal-town__link" href="#">Пермь</a></li>
+              <li><a class="modal-town__link" href="#">Ростов-на-Дону</a></li>
+              <li><a class="modal-town__link" href="#">Самара</a></li>
+              <li><a class="modal-town__link" href="#">Санкт-Петербург</a></li>
+              <li><a class="modal-town__link" href="#">Саратов</a></li>
+              <li><a class="modal-town__link" href="#">Сургут</a></li>
+              <li><a class="modal-town__link" href="#">Тюмень</a></li>
+              <li><a class="modal-town__link" href="#">Ульяновск</a></li>
+              <li><a class="modal-town__link" href="#">Уфа</a></li>
+              <li><a class="modal-town__link" href="#">Челябинск</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal modal-town modal-contact fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <form>
+            <div class="modal-header">
+              <h5 class="modal-title" id="contactModalLabel">Заказать звонок</h5>
+              <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body">
+              <input class="form-control" type="text" placeholder="Ваше имя" required="required"/>
+              <input class="form-control" type="text" placeholder="Номер телефона" required="required"/>
+              <input class="form-control" type="text" placeholder="Ваш город"/>
+              <p class="modal-time__title">Укажите удобное время для звонка:</p>
+              <div class="modal-time">
+                <input type="text" id="from__time" readonly="readonly"/>
+                <input type="text" id="to__time" readonly="readonly"/>
+                <div id="slider-range"></div>
+              </div>
+              <div class="checkbox">
+                <input type="checkbox" id="check" name="check" required="required"/>
+                <label for="check">Я согласен на обработку персональных данных</label>
+              </div>
+              <button class="btn-submit" type="submit">Заказать звонок</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=eff7a67d-abe4-44c8-ad01-4221d11c84ea&amp;lang=ru_RU"></script>
+    <script src="libs/js-libs.min.js"></script>
+    <script src="js/script.min.js"></script>
+  </body>
+</html>
