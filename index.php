@@ -129,110 +129,61 @@ $APPLICATION->SetTitle('Главная');
       <section class="project">
         <div class="container"> 
           <div class="project__wrapper"><a class="subtitle" href="#">Проекты</a>
-            <div class="owl-carousel owl-theme" id="project-slider">
-              <div class="project__item">
-                <div class="project__item__img"><img src="<?=SITE_TEMPLATE_PATH?>/images/project/project-img-1.jpg" alt="Проект 1"/></div>
-                <div class="project__item__content"><img class="project__item__logo" src="<?=SITE_TEMPLATE_PATH?>/images/icons/project-logo-1.jpg" alt="Проект 1 лого"/>
-                  <h4 class="project__item__name">ПАО «Нижнекамскнефтехим»</h4>
-                  <ul class="project__item__list">
-                    <li><span class="project__item__list__preword">город</span>
-                      <p>Нижнекамск</p>
-                    </li>
-                    <li> <span class="project__item__list__preword">год</span>
-                      <p>2018 - 2019 гг.</p>
-                    </li>
-                    <li> <span class="project__item__list__preword">материал</span>
-                      <p>ДЕКОТЕРМ-ЭПОКСИ</p>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="project__item">
-                <div class="project__item__img"><img src="<?=SITE_TEMPLATE_PATH?>/images/project/project-img-2.jpg" alt="Проект 2"/></div>
-                <div class="project__item__content"><img class="project__item__logo" src="<?=SITE_TEMPLATE_PATH?>/images/icons/project-logo-2.jpg" alt="Проект 2 лого"/>
-                  <h4 class="project__item__name">ОАО «ТАИФ-НК», КГПТО</h4>
-                  <ul class="project__item__list">
-                    <li><span class="project__item__list__preword">город</span>
-                      <p>Нижнекамск</p>
-                    </li>
-                    <li> <span class="project__item__list__preword">год</span>
-                      <p>2016 - 2017 гг.</p>
-                    </li>
-                    <li> <span class="project__item__list__preword">материал</span>
-                      <p>ДЕКОТЕРМ-ЭПОКСИ</p>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="project__item">
-                <div class="project__item__img"><img src="<?=SITE_TEMPLATE_PATH?>/images/project/project-img-3.jpg" alt="Проект 3"/></div>
-                <div class="project__item__content"><img class="project__item__logo" src="<?=SITE_TEMPLATE_PATH?>/images/icons/project-logo-3.jpg" alt="Проект 3 лого"/>
-                  <h4 class="project__item__name">Завод двигателей «КАМАЗ»</h4>
-                  <ul class="project__item__list">
-                    <li><span class="project__item__list__preword">город</span>
-                      <p>Набережные Челны</p>
-                    </li>
-                    <li> <span class="project__item__list__preword">год</span>
-                      <p>2014 - 2017 гг.</p>
-                    </li>
-                    <li> <span class="project__item__list__preword">материал</span>
-                      <p>ДЕКОТЕРМ, ДЕКОТЕРМ-КОП</p>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="project__item">
-                <div class="project__item__img"><img src="<?=SITE_TEMPLATE_PATH?>/images/project/project-img-4.jpg" alt="Проект 4"/></div>
-                <div class="project__item__content"><img class="project__item__logo" src="<?=SITE_TEMPLATE_PATH?>/images/icons/project-logo-4.jpg" alt="Проект 4 лого"/>
-                  <h4 class="project__item__name">ТЭЦ № 2</h4>
-                  <ul class="project__item__list">
-                    <li><span class="project__item__list__preword">город</span>
-                      <p>Ростов-на-Дону</p>
-                    </li>
-                    <li> <span class="project__item__list__preword">год</span>
-                      <p>2016 г.</p>
-                    </li>
-                    <li> <span class="project__item__list__preword">материал</span>
-                      <p>ДЕКОТЕРМ-КОП</p>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="project__item">
-                <div class="project__item__img"><img src="<?=SITE_TEMPLATE_PATH?>/images/project/project-img-5.jpg" alt="Проект 5"/></div>
-                <div class="project__item__content"><img class="project__item__logo" src="<?=SITE_TEMPLATE_PATH?>/images/icons/project-logo-5.jpg" alt="Проект 5 лого"/>
-                  <h4 class="project__item__name">ТЭЦ № 2 ЛАЭС</h4>
-                  <ul class="project__item__list">
-                    <li><span class="project__item__list__preword">город</span>
-                      <p>Санкт-Петербург</p>
-                    </li>
-                    <li> <span class="project__item__list__preword">год</span>
-                      <p>2013 г.</p>
-                    </li>
-                    <li> <span class="project__item__list__preword">материал</span>
-                      <p>ДЕКОТЕРМ, ДЕКОТЕРМ-Р</p>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="project__item">
-                <div class="project__item__img"><img src="<?=SITE_TEMPLATE_PATH?>/images/project/project-img-6.jpg" alt="Проект 6"/></div>
-                <div class="project__item__content"><img class="project__item__logo" src="<?=SITE_TEMPLATE_PATH?>/images/icons/project-logo-6.jpg" alt="Проект 6 лого"/>
-                  <h4 class="project__item__name">ТЭЦ № 20</h4>
-                  <ul class="project__item__list">
-                    <li><span class="project__item__list__preword">город</span>
-                      <p>Москва</p>
-                    </li>
-                    <li> <span class="project__item__list__preword">год</span>
-                      <p>2014 - 2016 гг.</p>
-                    </li>
-                    <li> <span class="project__item__list__preword">материал</span>
-                      <p>ДЕКОТЕРМ, ДЕКОТЕРМ-КОП</p>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
+            <?$APPLICATION->IncludeComponent("bitrix:news.list","projects",Array(
+              "DISPLAY_DATE" => "Y",
+              "DISPLAY_NAME" => "Y",
+              "DISPLAY_PICTURE" => "Y",
+              "DISPLAY_PREVIEW_TEXT" => "Y",
+              "AJAX_MODE" => "Y",
+              "IBLOCK_TYPE" => "main",
+              "IBLOCK_ID" => "1",
+              "NEWS_COUNT" => "20",
+              "SORT_BY1" => "ID",
+              "SORT_ORDER1" => "ASC",
+              "SORT_BY2" => "SORT",
+              "SORT_ORDER2" => "ASC",
+              "FILTER_NAME" => "",
+              "FIELD_CODE" => Array("NAME", "PREVIEW_PICTURE"),
+              "PROPERTY_CODE" => Array("CITY", "YEAR", "MATERIAL", "LOGO"),
+              "CHECK_DATES" => "Y",
+              "DETAIL_URL" => "",
+              "PREVIEW_TRUNCATE_LEN" => "",
+              "ACTIVE_DATE_FORMAT" => "d.m.Y",
+              "SET_TITLE" => "Y",
+              "SET_BROWSER_TITLE" => "Y",
+              "SET_META_KEYWORDS" => "Y",
+              "SET_META_DESCRIPTION" => "Y",
+              "SET_LAST_MODIFIED" => "Y",
+              "INCLUDE_IBLOCK_INTO_CHAIN" => "Y",
+              "ADD_SECTIONS_CHAIN" => "Y",
+              "HIDE_LINK_WHEN_NO_DETAIL" => "Y",
+              "PARENT_SECTION" => "",
+              "PARENT_SECTION_CODE" => "",
+              "INCLUDE_SUBSECTIONS" => "Y",
+              "CACHE_TYPE" => "A",
+              "CACHE_TIME" => "3600",
+              "CACHE_FILTER" => "Y",
+              "CACHE_GROUPS" => "Y",
+              "DISPLAY_TOP_PAGER" => "Y",
+              "DISPLAY_BOTTOM_PAGER" => "Y",
+              "PAGER_TITLE" => "Новости",
+              "PAGER_SHOW_ALWAYS" => "Y",
+              "PAGER_TEMPLATE" => "",
+              "PAGER_DESC_NUMBERING" => "Y",
+              "PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
+              "PAGER_SHOW_ALL" => "Y",
+              "PAGER_BASE_LINK_ENABLE" => "Y",
+              "SET_STATUS_404" => "Y",
+              "SHOW_404" => "Y",
+              "MESSAGE_404" => "",
+              "PAGER_BASE_LINK" => "",
+              "PAGER_PARAMS_NAME" => "arrPager",
+              "AJAX_OPTION_JUMP" => "N",
+              "AJAX_OPTION_STYLE" => "Y",
+              "AJAX_OPTION_HISTORY" => "N",
+              "AJAX_OPTION_ADDITIONAL" => ""
+              )
+            );?>
           </div>
         </div>
       </section>
@@ -249,21 +200,21 @@ $APPLICATION->SetTitle('Главная');
                 );?>
               </div>
             </div>
-              <a class="contact__block__phone" href="tel:<?include_once($_SERVER["DOCUMENT_ROOT"] . "/includes/common/phone_main.html")?>">
+              <a class="contact__block__phone" href="tel:<?include($_SERVER["DOCUMENT_ROOT"] . "/includes/common/phone_main.html")?>">
                 <?$APPLICATION->IncludeComponent("bitrix:main.include","",Array(
                     "AREA_FILE_SHOW" => "file", 
                     "PATH" => "/includes/common/phone_main.html"
                   )
                 );?>
               </a>
-              <a class="contact__block__phone" href="tel:<?include_once($_SERVER["DOCUMENT_ROOT"] . "/includes/common/phone_secondary.html")?>">
+              <a class="contact__block__phone" href="tel:<?include($_SERVER["DOCUMENT_ROOT"] . "/includes/common/phone_secondary.html")?>">
                 <?$APPLICATION->IncludeComponent("bitrix:main.include","",Array(
                     "AREA_FILE_SHOW" => "file", 
                     "PATH" => "/includes/common/phone_secondary.html"
                   )
                 );?>
               </a>
-              <a class="contact__block__mail" href="tel:<?include_once($_SERVER["DOCUMENT_ROOT"] . "/includes/common/email.html")?>">
+              <a class="contact__block__mail" href="tel:<?include($_SERVER["DOCUMENT_ROOT"] . "/includes/common/email.html")?>">
                 <?$APPLICATION->IncludeComponent("bitrix:main.include","",Array(
                     "AREA_FILE_SHOW" => "file", 
                     "PATH" => "/includes/common/email.html"

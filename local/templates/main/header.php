@@ -60,14 +60,14 @@ global $USER;
               );?>
             </a>
             <div class="dropdown-menu phone-dropdown" aria-labelledby="phoneDropdownMenu">
-              <a class="phone-dropdown__phone" href="tel:<?include_once($_SERVER["DOCUMENT_ROOT"] . "/includes/common/phone_main.html")?>">
+              <a class="phone-dropdown__phone" href="tel:<?include($_SERVER["DOCUMENT_ROOT"] . "/includes/common/phone_main.html")?>">
                 <?$APPLICATION->IncludeComponent("bitrix:main.include","",Array(
                     "AREA_FILE_SHOW" => "file", 
                     "PATH" => "/includes/common/phone_main.html"
                   )
                 );?>
               </a>
-              <a class="phone-dropdown__phone" href="tel:<?include_once($_SERVER["DOCUMENT_ROOT"] . "/includes/common/phone_secondary.html")?>">
+              <a class="phone-dropdown__phone" href="tel:<?include($_SERVER["DOCUMENT_ROOT"] . "/includes/common/phone_secondary.html")?>">
                 <?$APPLICATION->IncludeComponent("bitrix:main.include","",Array(
                     "AREA_FILE_SHOW" => "file", 
                     "PATH" => "/includes/common/phone_secondary.html"
@@ -83,7 +83,7 @@ global $USER;
               </div>
               <button class="phone-dropdown__btn" data-toggle="modal" data-target="#contactModal">Оставить заявку</button>
             </div><br/>
-            <a class="header__contact__text text-mail" href="mailto:<?include_once($_SERVER["DOCUMENT_ROOT"] . "/includes/common/email.html")?>">
+            <a class="header__contact__text text-mail" href="mailto:<?include($_SERVER["DOCUMENT_ROOT"] . "/includes/common/email.html")?>">
                 <?$APPLICATION->IncludeComponent("bitrix:main.include","",Array(
                     "AREA_FILE_SHOW" => "file", 
                     "PATH" => "/includes/common/email.html"
