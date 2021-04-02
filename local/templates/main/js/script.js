@@ -112,7 +112,7 @@ function yandexMap() {
                         // Опции.
                         iconLayout: "default#image",
                         // Своё изображение иконки метки.
-                        iconImageHref: "images/icons/map-icon.png",
+                        iconImageHref: "/local/templates/main/images/icons/map-icon.png",
                         // Размеры метки.
                         iconImageSize: [94, 81],
                         // Смещение левого верхнего угла иконки относительно

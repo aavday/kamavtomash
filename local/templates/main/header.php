@@ -32,7 +32,14 @@ global $USER;
       <div class="loader-container"></div>
     </div>
     <header class="header">
-      <nav class="navbar navbar-expand-lg"><a class="logo" href="/"><img src="<?=SITE_TEMPLATE_PATH?>/images/icons/logo.png" alt="Логотип компании"/></a>
+      <nav class="navbar navbar-expand-lg">
+        <a class="logo" href="/">
+          <?$APPLICATION->IncludeComponent("bitrix:main.include","",Array(
+              "AREA_FILE_SHOW" => "file",
+              "PATH" => "/includes/logo.html"
+            )
+          );?>
+        </a>
         <div class="collapse navbar-collapse" id="navbarHeader">
           <div class="header__town">
           <a class="header__town__select select-town" data-toggle="modal" data-target="#selectTownModal">Набережные Челны</a><br/>
@@ -59,7 +66,6 @@ global $USER;
                     "PATH" => "/includes/phone_main.html"
                   )
                 );?>
-                <br>
               </a>
               <a class="phone-dropdown__phone" href="tel:<?include_once($_SERVER["DOCUMENT_ROOT"] . "/includes/phone_secondary.html")?>">
                 <?$APPLICATION->IncludeComponent("bitrix:main.include","",Array(
@@ -68,7 +74,13 @@ global $USER;
                   )
                 );?>
               </a>
-              <p class="phone-dropdown__time">Пн-Сб 8:00 - 18:00</p>
+              <div class="phone-dropdown__time">
+                <?$APPLICATION->IncludeComponent("bitrix:main.include","",Array(
+                    "AREA_FILE_SHOW" => "file",
+                    "PATH" => "/includes/work_schedule.html"
+                  )
+                );?>
+              </div>
               <button class="phone-dropdown__btn" data-toggle="modal" data-target="#contactModal">Оставить заявку</button>
             </div><br/>
             <a class="header__contact__text text-mail" href="mailto:<?include_once($_SERVER["DOCUMENT_ROOT"] . "/includes/email.html")?>">

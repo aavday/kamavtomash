@@ -1,8 +1,21 @@
 
 	</div>
     <footer class="footer sticky_footer">
-      <div class="footer__left"><a class="footer-logo" href="/"><img src="<?=SITE_TEMPLATE_PATH?>/images/icons/logo-footer.png" alt="Логотип компании"/></a>
-        <p class="copyright"> &copy; 2021 КамАвтоМаш. Все права защищены.</p>
+      <div class="footer__left">
+        <a class="footer-logo" href="/">
+          <?$APPLICATION->IncludeComponent("bitrix:main.include","",Array(
+              "AREA_FILE_SHOW" => "file",
+              "PATH" => "/includes/logo_footer.html"
+            )
+          );?>
+        </a>
+        <div class="copyright">
+          <?$APPLICATION->IncludeComponent("bitrix:main.include","",Array(
+              "AREA_FILE_SHOW" => "file",
+              "PATH" => "/includes/copyright.html"
+            )
+          );?>
+        </div>
       </div><a class="itchelny" href="https://www.itchelny.ru/">
         <p>Создание и поддержка –</p><img src="<?=SITE_TEMPLATE_PATH?>/images/icons/itchelny-logo.png" alt="Логотип ITChelny"/></a>
     </footer>

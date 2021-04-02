@@ -241,21 +241,21 @@ $APPLICATION->SetTitle('Главная');
                     "PATH" => "/includes/phone_main.html"
                   )
                 );?>
-              </a><br>
+              </a>
               <a class="contact__block__phone" href="tel:<?include_once($_SERVER["DOCUMENT_ROOT"] . "/includes/phone_secondary.html")?>">
                 <?$APPLICATION->IncludeComponent("bitrix:main.include","",Array(
                     "AREA_FILE_SHOW" => "file", 
                     "PATH" => "/includes/phone_secondary.html"
                   )
                 );?>
-              </a><br>
+              </a>
               <a class="contact__block__mail" href="tel:<?include_once($_SERVER["DOCUMENT_ROOT"] . "/includes/email.html")?>">
                 <?$APPLICATION->IncludeComponent("bitrix:main.include","",Array(
                     "AREA_FILE_SHOW" => "file", 
                     "PATH" => "/includes/email.html"
                   )
                 );?>
-              </a><br>
+              </a>
             <button class="contact__block__btn" data-toggle="modal" data-target="#contactModal">Оставить заявку</button>
           </div>
         </div>
