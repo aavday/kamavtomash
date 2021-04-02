@@ -5,14 +5,14 @@
         <a class="footer-logo" href="/">
           <?$APPLICATION->IncludeComponent("bitrix:main.include","",Array(
               "AREA_FILE_SHOW" => "file",
-              "PATH" => "/includes/logo_footer.html"
+              "PATH" => "/includes/common/logo_footer.html"
             )
           );?>
         </a>
         <div class="copyright">
           <?$APPLICATION->IncludeComponent("bitrix:main.include","",Array(
               "AREA_FILE_SHOW" => "file",
-              "PATH" => "/includes/copyright.html"
+              "PATH" => "/includes/common/copyright.html"
             )
           );?>
         </div>
