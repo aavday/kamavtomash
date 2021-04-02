@@ -227,45 +227,32 @@ $APPLICATION->SetTitle('Главная');
           <div class="contact__block">
             <h3 class="contact__block__title">Контакты </h3>
             <div class="contact__block__town"><a class="contact__block__town__select" data-toggle="modal" data-target="#selectTownModal">Набережные Челны</a><br/>
-              <p class="contact__block__town__text">
+              <div class="contact__block__town__text">
                 <?$APPLICATION->IncludeComponent("bitrix:main.include","",Array(
                     "AREA_FILE_SHOW" => "file", 
-                    "PATH" => "/includes/address.php"
+                    "PATH" => "/includes/address.html"
                   )
                 );?>
-              </p>
+              </div>
             </div>
-              <a class="contact__block__phone" href="tel:<?$APPLICATION->IncludeComponent("bitrix:main.include","",Array(
-                    "AREA_FILE_SHOW" => "file", 
-                    "PATH" => "/includes/phone_main.php"
-                  )
-                );?>"
-                >
+              <a class="contact__block__phone" href="tel:<?include_once($_SERVER["DOCUMENT_ROOT"] . "/includes/phone_main.html")?>">
                 <?$APPLICATION->IncludeComponent("bitrix:main.include","",Array(
                     "AREA_FILE_SHOW" => "file", 
-                    "PATH" => "/includes/phone_main.php"
+                    "PATH" => "/includes/phone_main.html"
                   )
                 );?>
               </a><br>
-              <a class="contact__block__phone" href="<?$APPLICATION->IncludeComponent("bitrix:main.include","",Array(
-                    "AREA_FILE_SHOW" => "file", 
-                    "PATH" => "/includes/phone_secondary.php"
-                  )
-                );?>">
+              <a class="contact__block__phone" href="tel:<?include_once($_SERVER["DOCUMENT_ROOT"] . "/includes/phone_secondary.html")?>">
                 <?$APPLICATION->IncludeComponent("bitrix:main.include","",Array(
                     "AREA_FILE_SHOW" => "file", 
-                    "PATH" => "/includes/phone_secondary.php"
+                    "PATH" => "/includes/phone_secondary.html"
                   )
                 );?>
               </a><br>
-              <a class="contact__block__mail" href="mailto:<?$APPLICATION->IncludeComponent("bitrix:main.include","",Array(
-                    "AREA_FILE_SHOW" => "file", 
-                    "PATH" => "/includes/email.php"
-                  )
-                );?>">
+              <a class="contact__block__mail" href="tel:<?include_once($_SERVER["DOCUMENT_ROOT"] . "/includes/email.html")?>">
                 <?$APPLICATION->IncludeComponent("bitrix:main.include","",Array(
                     "AREA_FILE_SHOW" => "file", 
-                    "PATH" => "/includes/email.php"
+                    "PATH" => "/includes/email.html"
                   )
                 );?>
               </a><br>

@@ -34,71 +34,47 @@ global $USER;
     <header class="header">
       <nav class="navbar navbar-expand-lg"><a class="logo" href="/"><img src="<?=SITE_TEMPLATE_PATH?>/images/icons/logo.png" alt="Логотип компании"/></a>
         <div class="collapse navbar-collapse" id="navbarHeader">
-          <?$APPLICATION->IncludeComponent("bitrix:menu","main_menu",Array(
-              "ROOT_MENU_TYPE" => "top", 
-              "MAX_LEVEL" => "1", 
-              "CHILD_MENU_TYPE" => "top", 
-              "USE_EXT" => "Y",
-              "DELAY" => "N",
-              "ALLOW_MULTI_SELECT" => "Y",
-              "MENU_CACHE_TYPE" => "N", 
-              "MENU_CACHE_TIME" => "3600", 
-              "MENU_CACHE_USE_GROUPS" => "Y", 
-              "MENU_CACHE_GET_VARS" => "" 
-            )
-          );?>
-          <div class="header__town"><a class="header__town__select select-town" data-toggle="modal" data-target="#selectTownModal">Набережные Челны</a><br/>
-            <p class="header__town__text text-adress">
-              <?$APPLICATION->IncludeComponent("bitrix:main.include","",Array(
-                  "AREA_FILE_SHOW" => "file", 
-                  "PATH" => "/includes/address.php"
-                )
-              );?>
-            </p>
+          <div class="header__town">
+          <a class="header__town__select select-town" data-toggle="modal" data-target="#selectTownModal">Набережные Челны</a><br/>
+            <div class="header__town__text text-adress">
+                <?$APPLICATION->IncludeComponent("bitrix:main.include","",Array(
+                    "AREA_FILE_SHOW" => "file",
+                    "PATH" => "/includes/address.html"
+                  )
+                );?>
+            </div>
           </div>
           <div class="header__contact">
             <a class="header__contact__select select-phone" id="phoneDropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <?$APPLICATION->IncludeComponent("bitrix:main.include","",Array(
                   "AREA_FILE_SHOW" => "file", 
-                  "PATH" => "/includes/phone_main.php"
+                  "PATH" => "/includes/phone_main.html"
                 )
               );?>
             </a>
             <div class="dropdown-menu phone-dropdown" aria-labelledby="phoneDropdownMenu">
-              <a class="phone-dropdown__phone" href="<?$APPLICATION->IncludeComponent("bitrix:main.include","",Array(
-                    "AREA_FILE_SHOW" => "file", 
-                    "PATH" => "/includes/phone_main.php"
-                  )
-                );?>">
+              <a class="phone-dropdown__phone" href="tel:<?include_once($_SERVER["DOCUMENT_ROOT"] . "/includes/phone_main.html")?>">
                 <?$APPLICATION->IncludeComponent("bitrix:main.include","",Array(
                     "AREA_FILE_SHOW" => "file", 
-                    "PATH" => "/includes/phone_main.php"
+                    "PATH" => "/includes/phone_main.html"
                   )
                 );?>
                 <br>
               </a>
-              <a class="phone-dropdown__phone" href="tel:<?$APPLICATION->IncludeComponent("bitrix:main.include","",Array(
-                    "AREA_FILE_SHOW" => "file", 
-                    "PATH" => "/includes/phone_secondary.php"
-                  )
-                );?>">
+              <a class="phone-dropdown__phone" href="tel:<?include_once($_SERVER["DOCUMENT_ROOT"] . "/includes/phone_secondary.html")?>">
                 <?$APPLICATION->IncludeComponent("bitrix:main.include","",Array(
                     "AREA_FILE_SHOW" => "file", 
-                    "PATH" => "/includes/phone_secondary.php"
+                    "PATH" => "/includes/phone_secondary.html"
                   )
                 );?>
               </a>
               <p class="phone-dropdown__time">Пн-Сб 8:00 - 18:00</p>
               <button class="phone-dropdown__btn" data-toggle="modal" data-target="#contactModal">Оставить заявку</button>
             </div><br/>
-            <a class="header__contact__text text-mail" href="mailto:<?$APPLICATION->IncludeComponent("bitrix:main.include","",Array(
-                  "AREA_FILE_SHOW" => "file", 
-                  "PATH" => "/includes/email.php"
-                )
-              );?>">
+            <a class="header__contact__text text-mail" href="mailto:<?include_once($_SERVER["DOCUMENT_ROOT"] . "/includes/email.html")?>">
                 <?$APPLICATION->IncludeComponent("bitrix:main.include","",Array(
                     "AREA_FILE_SHOW" => "file", 
-                    "PATH" => "/includes/email.php"
+                    "PATH" => "/includes/email.html"
                   )
                 );?>
             </a>
