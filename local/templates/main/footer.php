@@ -27,41 +27,61 @@
             <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
           </div>
           <div class="modal-body">
-            <ul class="modal-town__list">
-              <li><a class="modal-town__link" href="#">Азнакаево</a></li>
-              <li><a class="modal-town__link" href="#">Альметьевск</a></li>
-              <li><a class="modal-town__link" href="#">Бавлы</a></li>
-              <li><a class="modal-town__link" href="#">Бугульма</a></li>
-              <li><a class="modal-town__link" href="#">Волгоград</a></li>
-              <li><a class="modal-town__link" href="#">Воронеж</a></li>
-              <li><a class="modal-town__link" href="#">Джалиль</a></li>
-              <li><a class="modal-town__link" href="#">Екатеринбург</a></li>
-              <li><a class="modal-town__link" href="#">Елабуга</a></li>
-              <li><a class="modal-town__link" href="#">Заинск</a></li>
-              <li><a class="modal-town__link" href="#">Ижевск</a></li>
-              <li><a class="modal-town__link" href="#">Иркутск</a></li>
-              <li><a class="modal-town__link" href="#">Казань</a></li>
-              <li><a class="modal-town__link" href="#">Краснодар</a></li>
-              <li><a class="modal-town__link" href="#">Красноярск</a></li>
-              <li><a class="modal-town__link" href="#">Лениногорск</a></li>
-              <li><a class="modal-town__link" href="#">Менделеевск</a></li>
-              <li><a class="modal-town__link" href="#">Москва</a></li>
-              <li><a class="modal-town__link active" href="#">Набережные Челны</a></li>
-              <li><a class="modal-town__link" href="#">Нижнекамск</a></li>
-              <li><a class="modal-town__link" href="#">Нижний Новгород</a></li>
-              <li><a class="modal-town__link" href="#">Нурлат</a></li>
-              <li><a class="modal-town__link" href="#">Омск</a></li>
-              <li><a class="modal-town__link" href="#">Пермь</a></li>
-              <li><a class="modal-town__link" href="#">Ростов-на-Дону</a></li>
-              <li><a class="modal-town__link" href="#">Самара</a></li>
-              <li><a class="modal-town__link" href="#">Санкт-Петербург</a></li>
-              <li><a class="modal-town__link" href="#">Саратов</a></li>
-              <li><a class="modal-town__link" href="#">Сургут</a></li>
-              <li><a class="modal-town__link" href="#">Тюмень</a></li>
-              <li><a class="modal-town__link" href="#">Ульяновск</a></li>
-              <li><a class="modal-town__link" href="#">Уфа</a></li>
-              <li><a class="modal-town__link" href="#">Челябинск</a></li>
-            </ul>
+            <?$APPLICATION->IncludeComponent("bitrix:news.list","cities",Array(
+              "DISPLAY_DATE" => "Y",
+              "DISPLAY_NAME" => "Y",
+              "DISPLAY_PICTURE" => "Y",
+              "DISPLAY_PREVIEW_TEXT" => "Y",
+              "AJAX_MODE" => "Y",
+              "IBLOCK_TYPE" => "main",
+              "IBLOCK_ID" => "2",
+              "NEWS_COUNT" => "20",
+              "SORT_BY1" => "NAME",
+              "SORT_ORDER1" => "ASC",
+              "SORT_BY2" => "SORT",
+              "SORT_ORDER2" => "ASC",
+              "FILTER_NAME" => "",
+              "FIELD_CODE" => Array("NAME"),
+              "PROPERTY_CODE" => Array(),
+              "CHECK_DATES" => "Y",
+              "DETAIL_URL" => "",
+              "PREVIEW_TRUNCATE_LEN" => "",
+              "ACTIVE_DATE_FORMAT" => "d.m.Y",
+              "SET_TITLE" => "Y",
+              "SET_BROWSER_TITLE" => "Y",
+              "SET_META_KEYWORDS" => "Y",
+              "SET_META_DESCRIPTION" => "Y",
+              "SET_LAST_MODIFIED" => "Y",
+              "INCLUDE_IBLOCK_INTO_CHAIN" => "Y",
+              "ADD_SECTIONS_CHAIN" => "Y",
+              "HIDE_LINK_WHEN_NO_DETAIL" => "Y",
+              "PARENT_SECTION" => "",
+              "PARENT_SECTION_CODE" => "",
+              "INCLUDE_SUBSECTIONS" => "Y",
+              "CACHE_TYPE" => "A",
+              "CACHE_TIME" => "3600",
+              "CACHE_FILTER" => "Y",
+              "CACHE_GROUPS" => "Y",
+              "DISPLAY_TOP_PAGER" => "Y",
+              "DISPLAY_BOTTOM_PAGER" => "Y",
+              "PAGER_TITLE" => "Новости",
+              "PAGER_SHOW_ALWAYS" => "Y",
+              "PAGER_TEMPLATE" => "",
+              "PAGER_DESC_NUMBERING" => "Y",
+              "PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
+              "PAGER_SHOW_ALL" => "Y",
+              "PAGER_BASE_LINK_ENABLE" => "Y",
+              "SET_STATUS_404" => "Y",
+              "SHOW_404" => "Y",
+              "MESSAGE_404" => "",
+              "PAGER_BASE_LINK" => "",
+              "PAGER_PARAMS_NAME" => "arrPager",
+              "AJAX_OPTION_JUMP" => "N",
+              "AJAX_OPTION_STYLE" => "Y",
+              "AJAX_OPTION_HISTORY" => "N",
+              "AJAX_OPTION_ADDITIONAL" => ""
+              )
+            );?>
           </div>
         </div>
       </div>
