@@ -89,19 +89,19 @@
     <div class="modal modal-town modal-contact fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
-          <form>
+          <form action class="callback-request">
             <div class="modal-header">
               <h5 class="modal-title" id="contactModalLabel">Заказать звонок</h5>
               <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
             </div>
             <div class="modal-body">
-              <input class="form-control" type="text" placeholder="Ваше имя" required="required"/>
-              <input class="form-control" type="text" placeholder="Номер телефона" required="required"/>
-              <input class="form-control" type="text" placeholder="Ваш город"/>
+              <input class="form-control" type="text" placeholder="Ваше имя" required="required" id="name" name="Имя"/>
+              <input class="form-control" type="text" placeholder="Номер телефона" required="required" id="phone" name="Телефон"/>
+              <input class="form-control" type="text" placeholder="Ваш город" id="city" name="Город"/>
               <p class="modal-time__title">Укажите удобное время для звонка:</p>
               <div class="modal-time">
-                <input type="text" id="from__time" readonly="readonly"/>
-                <input type="text" id="to__time" readonly="readonly"/>
+                <input type="text" id="from__time" name="time_from" readonly="readonly"/>
+                <input type="text" id="to__time" name="time_by" readonly="readonly"/>
                 <div id="slider-range"></div>
               </div>
               <div class="checkbox">
@@ -110,6 +110,7 @@
               </div>
               <button class="btn-submit" type="submit">Заказать звонок</button>
             </div>
+            <input type="hidden" id="subject" name="subject" value="Заказ обратного звонка">
           </form>
         </div>
       </div>
