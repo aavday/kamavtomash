@@ -96,6 +96,8 @@ function sliders() {
 
 function yandexMap() {
     try {
+        let iconUrl = location.origin + "/local/html/images/icons/map-icon.png";
+
         if ($(window).width() <= 992) {
             ymaps.ready(() => {
                 const myMap = new ymaps.Map("map-card", {
@@ -112,7 +114,7 @@ function yandexMap() {
                         // Опции.
                         iconLayout: "default#image",
                         // Своё изображение иконки метки.
-                        iconImageHref: "images/icons/map-icon.png",
+                        iconImageHref: iconUrl,
                         // Размеры метки.
                         iconImageSize: [94, 81],
                         // Смещение левого верхнего угла иконки относительно
@@ -139,7 +141,7 @@ function yandexMap() {
                         // Опции.
                         iconLayout: "default#image",
                         // Своё изображение иконки метки.
-                        iconImageHref: "images/icons/map-icon.png",
+                        iconImageHref: iconUrl,
                         // Размеры метки.
                         iconImageSize: [94, 81],
                         // Смещение левого верхнего угла иконки относительно
