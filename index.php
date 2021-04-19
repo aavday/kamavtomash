@@ -19,13 +19,7 @@ $APPLICATION->SetTitle('Главная');
       <section class="about">
         <div class="container">
           <div class="about__wrapper">
-            <a class="subtitle" href="#">
-              <?$APPLICATION->IncludeComponent("bitrix:main.include","",Array(
-                  "AREA_FILE_SHOW" => "file", 
-                  "PATH" => "/includes/main_page/about/about_title.html"
-                )
-              );?>
-            </a>
+            <a class="subtitle" href="#">О компании</a>
             <div class="row">
               <div class="col-xl-6">
                 <?$APPLICATION->IncludeComponent("bitrix:main.include","",Array(
@@ -41,12 +35,62 @@ $APPLICATION->SetTitle('Главная');
                   )
                 );?>
               </div>
+              <?$APPLICATION->IncludeComponent("bitrix:news.list","about_imgs_main",Array(
+                "DISPLAY_DATE" => "Y",
+                "DISPLAY_NAME" => "Y",
+                "DISPLAY_PICTURE" => "Y",
+                "DISPLAY_PREVIEW_TEXT" => "Y",
+                "AJAX_MODE" => "Y",
+                "IBLOCK_TYPE" => "main",
+                "IBLOCK_ID" => "4",
+                "NEWS_COUNT" => "20",
+                "SORT_BY1" => "ID",
+                "SORT_ORDER1" => "ASC",
+                "SORT_BY2" => "SORT",
+                "SORT_ORDER2" => "ASC",
+                "FILTER_NAME" => "",
+                "FIELD_CODE" => Array("PREVIEW_PICTURE"),
+                "PROPERTY_CODE" => Array(),
+                "CHECK_DATES" => "Y",
+                "DETAIL_URL" => "",
+                "PREVIEW_TRUNCATE_LEN" => "",
+                "ACTIVE_DATE_FORMAT" => "d.m.Y",
+                "SET_TITLE" => "N",
+                "SET_BROWSER_TITLE" => "Y",
+                "SET_META_KEYWORDS" => "Y",
+                "SET_META_DESCRIPTION" => "Y",
+                "SET_LAST_MODIFIED" => "Y",
+                "INCLUDE_IBLOCK_INTO_CHAIN" => "Y",
+                "ADD_SECTIONS_CHAIN" => "Y",
+                "HIDE_LINK_WHEN_NO_DETAIL" => "Y",
+                "PARENT_SECTION" => "4",
+                "PARENT_SECTION_CODE" => "",
+                "INCLUDE_SUBSECTIONS" => "Y",
+                "CACHE_TYPE" => "A",
+                "CACHE_TIME" => "3600",
+                "CACHE_FILTER" => "Y",
+                "CACHE_GROUPS" => "Y",
+                "DISPLAY_TOP_PAGER" => "Y",
+                "DISPLAY_BOTTOM_PAGER" => "Y",
+                "PAGER_TITLE" => "Новости",
+                "PAGER_SHOW_ALWAYS" => "Y",
+                "PAGER_TEMPLATE" => "",
+                "PAGER_DESC_NUMBERING" => "Y",
+                "PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
+                "PAGER_SHOW_ALL" => "Y",
+                "PAGER_BASE_LINK_ENABLE" => "Y",
+                "SET_STATUS_404" => "Y",
+                "SHOW_404" => "Y",
+                "MESSAGE_404" => "",
+                "PAGER_BASE_LINK" => "",
+                "PAGER_PARAMS_NAME" => "arrPager",
+                "AJAX_OPTION_JUMP" => "N",
+                "AJAX_OPTION_STYLE" => "Y",
+                "AJAX_OPTION_HISTORY" => "N",
+                "AJAX_OPTION_ADDITIONAL" => ""
+                )
+              );?>
             </div>
-            <?$APPLICATION->IncludeComponent("bitrix:main.include","",Array(
-                "AREA_FILE_SHOW" => "file",
-                "PATH" => "/includes/main_page/about/about_bottom.html"
-              )
-            );?>
           </div>
         </div>
       </section>
@@ -55,13 +99,7 @@ $APPLICATION->SetTitle('Главная');
           <div class="container"> 
             <div class="row">
               <div class="col-lg-6 offset-xl-1 col-xl-5">
-                <a class="subtitle" href="#">
-                  <?$APPLICATION->IncludeComponent("bitrix:main.include","",Array(
-                      "AREA_FILE_SHOW" => "file",
-                      "PATH" => "/includes/main_page/brands/first_brand_title.html"
-                    )
-                  );?>
-                </a>
+                <a class="subtitle" href="#">Jotun</a>
                 <?$APPLICATION->IncludeComponent("bitrix:main.include","",Array(
                     "AREA_FILE_SHOW" => "file",
                     "PATH" => "/includes/main_page/brands/first_brand_text.html"
@@ -75,13 +113,7 @@ $APPLICATION->SetTitle('Главная');
           <div class="container"> 
             <div class="row">
               <div class="offset-lg-6 col-lg-6 offset-xl-6 col-xl-6">
-                <a class="subtitle" href="#">
-                  <?$APPLICATION->IncludeComponent("bitrix:main.include","",Array(
-                      "AREA_FILE_SHOW" => "file",
-                      "PATH" => "/includes/main_page/brands/second_brand_title.html"
-                    )
-                );?>
-                </a>
+                <a class="subtitle" href="#">Огнезащита Декотерм</a>
                 <?$APPLICATION->IncludeComponent("bitrix:main.include","",Array(
                     "AREA_FILE_SHOW" => "file",
                     "PATH" => "/includes/main_page/brands/second_brand_text.html"
@@ -96,26 +128,14 @@ $APPLICATION->SetTitle('Главная');
         <div class="container"> 
           <div class="row">
             <div class="col-lg-7 offset-xl-1 col-xl-5">
-              <a class="subtitle" href="#">
-                <?$APPLICATION->IncludeComponent("bitrix:main.include","",Array(
-                    "AREA_FILE_SHOW" => "file",
-                    "PATH" => "/includes/main_page/fire_protection/fire_protection_title.html"
-                  )
-                );?>
-              </a>
+              <a class="subtitle" href="#">Огнезащита</a>
               <?$APPLICATION->IncludeComponent("bitrix:main.include","",Array(
                   "AREA_FILE_SHOW" => "file",
                   "PATH" => "/includes/main_page/fire_protection/fire_protection_text.html"
                 )
               );?>
               <div class="fire-protection__use">
-                <h4>
-                  <?$APPLICATION->IncludeComponent("bitrix:main.include","",Array(
-                      "AREA_FILE_SHOW" => "file",
-                      "PATH" => "/includes/main_page/fire_protection/fire_protection_use_title.html"
-                    )
-                  );?>
-                </h4>
+                <h4>Области применения огнезащитных красок</h4>
                 <?$APPLICATION->IncludeComponent("bitrix:main.include","",Array(
                     "AREA_FILE_SHOW" => "file",
                     "PATH" => "/includes/main_page/fire_protection/fire_protection_use_text.html"
@@ -128,7 +148,8 @@ $APPLICATION->SetTitle('Главная');
       </section>
       <section class="project">
         <div class="container"> 
-          <div class="project__wrapper"><a class="subtitle" href="#">Проекты</a>
+          <div class="project__wrapper">
+            <a class="subtitle" href="#">Проекты</a>
             <?$APPLICATION->IncludeComponent("bitrix:news.list","projects",Array(
               "DISPLAY_DATE" => "Y",
               "DISPLAY_NAME" => "Y",
@@ -149,7 +170,7 @@ $APPLICATION->SetTitle('Главная');
               "DETAIL_URL" => "",
               "PREVIEW_TRUNCATE_LEN" => "",
               "ACTIVE_DATE_FORMAT" => "d.m.Y",
-              "SET_TITLE" => "Y",
+              "SET_TITLE" => "N",
               "SET_BROWSER_TITLE" => "Y",
               "SET_META_KEYWORDS" => "Y",
               "SET_META_DESCRIPTION" => "Y",

@@ -10,7 +10,7 @@ global $USER;
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-    <title><? $APPLICATION->ShowTitle(); ?></title>
+    <title><? $APPLICATION->ShowTitle(false); ?></title>
     <link rel="shortcut icon" href="<?=SITE_TEMPLATE_PATH?>/favicon.ico" type="image/x-icon"/>
     <link rel="icon" href="<?=SITE_TEMPLATE_PATH?>/favicon.ico" type="image/x-icon"/>
     <? Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/libs/css-libs.min.css") ?>
@@ -25,14 +25,19 @@ global $USER;
         <div id="panel">
           <?
             $APPLICATION->ShowPanel();
-            Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/js/panel-fix.js");
+            if ($APPLICATION->GetCurPage() == '/') Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/js/panel-fix.js");
           ?>
         </div>
       <? endif; ?>
     <div id="preloader">
       <div class="loader-container"></div>
     </div>
-    <header class="header">
+    <?
+    if ($APPLICATION->GetCurPage() == '/'):?>
+      <header class="header">
+    <?else:?>
+      <header class="header header-inside">
+    <?endif;?>
       <nav class="navbar navbar-expand-lg">
         <a class="logo" href="/">
           <?$APPLICATION->IncludeComponent("bitrix:main.include","",Array(
@@ -42,15 +47,28 @@ global $USER;
           );?>
         </a>
         <div class="collapse navbar-collapse" id="navbarHeader">
+          <?$APPLICATION->IncludeComponent("bitrix:menu","main_menu",Array(
+                  "ROOT_MENU_TYPE" => "top", 
+                  "MAX_LEVEL" => "1", 
+                  "CHILD_MENU_TYPE" => "top", 
+                  "USE_EXT" => "Y",
+                  "DELAY" => "N",
+                  "ALLOW_MULTI_SELECT" => "Y",
+                  "MENU_CACHE_TYPE" => "N", 
+                  "MENU_CACHE_TIME" => "3600", 
+                  "MENU_CACHE_USE_GROUPS" => "Y", 
+                  "MENU_CACHE_GET_VARS" => "" 
+              )
+          );?>
           <div class="header__town">
-          <a class="header__town__select select-town" data-toggle="modal" data-target="#selectTownModal">Набережные Челны</a><br/>
-            <div class="header__town__text text-adress">
+            <a class="header__town__select select-town" data-toggle="modal" data-target="#selectTownModal">Набережные Челны</a><br/>
+              <div class="header__town__text text-adress">
                 <?$APPLICATION->IncludeComponent("bitrix:main.include","",Array(
                     "AREA_FILE_SHOW" => "file",
                     "PATH" => "/includes/common/address.html"
                   )
                 );?>
-            </div>
+              </div>
           </div>
           <div class="header__contact">
             <a class="header__contact__select select-phone" id="phoneDropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

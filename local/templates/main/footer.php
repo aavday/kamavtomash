@@ -47,7 +47,7 @@
               "DETAIL_URL" => "",
               "PREVIEW_TRUNCATE_LEN" => "",
               "ACTIVE_DATE_FORMAT" => "d.m.Y",
-              "SET_TITLE" => "Y",
+              "SET_TITLE" => "N",
               "SET_BROWSER_TITLE" => "Y",
               "SET_META_KEYWORDS" => "Y",
               "SET_META_DESCRIPTION" => "Y",

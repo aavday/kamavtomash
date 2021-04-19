@@ -1,102 +1,131 @@
 <?
 require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
-$APPLICATION->SetTitle('Главная');
+$APPLICATION->SetTitle('Jotun');
 ?>
 
 <div class="inside-page jotun-page">
 	<div class="container">
 		<div class="inside-wrapper jotun-wrapper">
-			<h1 class="title">Jotun</h1>
-			<p><b>Компания Йотун</b>, основанная 1926 году в Норвегии, на сегодняшний день является одной из фирм, лидирующих на мировом рынке в области разработки и производства промышленных лакокрасочных покрытий.</p>
-			<p>Лаборатории компании оснащены сверхсовременным оборудованием, позволяющим получать уникальные результаты исследований для производства новых красок.</p>
-			<p>Значительное место в этих исследованиях отводится изучению влияния краски на окружающую среду и здоровье человека. Поэтому характеристики покрытий превосходят жесткие требования европейских институтов по охране окружающей среды.</p>
-			<p>Репутация компании и производимых ею материалов позволила использовать покрытия Йотун в таких всемирно известных проектах как: реновация Эйфелевой башни в Париже, строительство тоннеля под проливом Ла-Манш между Францией и Англией, моста "Golden Gate" в Сан-Франциско, насыпные архипелаги в Персидском заливе "Пальма" и "Мир", 7* отель "Парус" в арабских эмиратах, самое высокое в мире здание Burj Dubai, крупнейшие в мире пассажирские лайнеры "Queen Mary" и "Queen Mary II", резервуары, парки, трубопроводы и оффшорные буровые платформы и еще тысячи объектов различного назначения по всему миру.</p>
-			<p>В России краски Йотун ежегодно используются для защиты металлических конструкций мостов, резервуаров, береговых и оффшорных буровых платформ, судов, электростанций, трубопроводов и т.д.</p>
-			<p>Клиентами компании являются крупнейшие строительные и производственные компании, пароходства, предприятия нефте- и газо- добывающей и перерабатывающей промышленности.</p>
-			<p>В 2010 году в Татарстане компания Йотун выиграла конкурс, проводимый ОАО "Татнефть" на поставку антикоррозионных покрытий для стоящийся Комплекса НП и НХЗ в г. Нижнекамске.</p>
+			<h1 class="title"><?$APPLICATION->ShowTitle(false)?></h1>
+			<?$APPLICATION->IncludeComponent("bitrix:main.include","",Array(
+					"AREA_FILE_SHOW" => "file", 
+					"PATH" => "/includes/jotun/jotun.html"
+				)
+			);?>
 			<div class="jotun-page__items">
-				<div class="row"> 
-					<div class="col-md-6 col-lg-4 col-xl-2">
-						<div class="jotun-page__item">
-							<div class="jotun-page__item__img"><img src="../images/jotun/jotun-img-1.jpg" alt="Картинка продукта 1"/></div>
-							<h4 class="jotun-page__item__name">Абразивостойкие покрытия</h4>
-						</div>
-					</div>
-					<div class="col-md-6 col-lg-4 col-xl-2">
-						<div class="jotun-page__item">
-							<div class="jotun-page__item__img"><img src="../images/jotun/jotun-img-2.jpg" alt="Картинка продукта 2"/></div>
-							<h4 class="jotun-page__item__name">Акриловые покрытия</h4>
-						</div>
-					</div>
-					<div class="col-md-6 col-lg-4 col-xl-2">
-						<div class="jotun-page__item">
-							<div class="jotun-page__item__img"><img src="../images/jotun/jotun-img-3.jpg" alt="Картинка продукта 3"/></div>
-							<h4 class="jotun-page__item__name">Алкидные покрытия</h4>
-						</div>
-					</div>
-					<div class="col-md-6 col-lg-4 col-xl-2">
-						<div class="jotun-page__item">
-							<div class="jotun-page__item__img"><img src="../images/jotun/jotun-img-4.jpg" alt="Картинка продукта 4"/></div>
-							<h4 class="jotun-page__item__name">Полиуретановые финишные покрытия</h4>
-						</div>
-					</div>
-					<div class="col-md-6 col-lg-4 col-xl-2">
-						<div class="jotun-page__item">
-							<div class="jotun-page__item__img"><img src="../images/jotun/jotun-img-5.jpg" alt="Картинка продукта 5"/></div>
-							<h4 class="jotun-page__item__name">Температуростойкие покрытия</h4>
-						</div>
-					</div>
-					<div class="col-md-6 col-lg-4 col-xl-2">
-						<div class="jotun-page__item">
-							<div class="jotun-page__item__img"><img src="../images/jotun/jotun-img-6.jpg" alt="Картинка продукта 6"/></div>
-							<h4 class="jotun-page__item__name">Химстойкие покрытия</h4>
-						</div>
-					</div>
-					<div class="col-md-6 col-lg-4 col-xl-2">
-						<div class="jotun-page__item">
-							<div class="jotun-page__item__img"><img src="../images/jotun/jotun-img-7.jpg" alt="Картинка продукта 7"/></div>
-							<h4 class="jotun-page__item__name">Цинконаполненные эпоксидные группы Barrier</h4>
-						</div>
-					</div>
-					<div class="col-md-6 col-lg-4 col-xl-2">
-						<div class="jotun-page__item">
-							<div class="jotun-page__item__img"><img src="../images/jotun/jotun-img-8.jpg" alt="Картинка продукта 8"/></div>
-							<h4 class="jotun-page__item__name">Эпоксидные покрытия серии Jotamastic</h4>
-						</div>
-					</div>
-					<div class="col-md-6 col-lg-4 col-xl-2">
-						<div class="jotun-page__item">
-							<div class="jotun-page__item__img"><img src="../images/jotun/jotun-img-9.jpg" alt="Картинка продукта 9"/></div>
-							<h4 class="jotun-page__item__name">Эпоксидные покрытия серии Penguard</h4>
-						</div>
-					</div>
-					<div class="col-md-6 col-lg-4 col-xl-2">
-						<div class="jotun-page__item">
-							<div class="jotun-page__item__img"><img src="../images/jotun/jotun-img-10.jpg" alt="Картинка продукта 10"/></div>
-							<h4 class="jotun-page__item__name">Эпоксидные покрытия серии Tankguard</h4>
-						</div>
-					</div>
-				</div>
+				<?$APPLICATION->IncludeComponent("bitrix:news.list","jotun_products",Array(
+					"DISPLAY_DATE" => "Y",
+					"DISPLAY_NAME" => "Y",
+					"DISPLAY_PICTURE" => "Y",
+					"DISPLAY_PREVIEW_TEXT" => "Y",
+					"AJAX_MODE" => "Y",
+					"IBLOCK_TYPE" => "main",
+					"IBLOCK_ID" => "5",
+					"NEWS_COUNT" => "20",
+					"SORT_BY1" => "ID",
+					"SORT_ORDER1" => "ASC",
+					"SORT_BY2" => "SORT",
+					"SORT_ORDER2" => "ASC",
+					"FILTER_NAME" => "",
+					"FIELD_CODE" => Array("NAME","PREVIEW_PICTURE"),
+					"PROPERTY_CODE" => Array(),
+					"CHECK_DATES" => "Y",
+					"DETAIL_URL" => "",
+					"PREVIEW_TRUNCATE_LEN" => "",
+					"ACTIVE_DATE_FORMAT" => "d.m.Y",
+					"SET_TITLE" => "N",
+					"SET_BROWSER_TITLE" => "Y",
+					"SET_META_KEYWORDS" => "Y",
+					"SET_META_DESCRIPTION" => "Y",
+					"SET_LAST_MODIFIED" => "Y",
+					"INCLUDE_IBLOCK_INTO_CHAIN" => "Y",
+					"ADD_SECTIONS_CHAIN" => "Y",
+					"HIDE_LINK_WHEN_NO_DETAIL" => "Y",
+					"PARENT_SECTION" => "6",
+					"PARENT_SECTION_CODE" => "",
+					"INCLUDE_SUBSECTIONS" => "Y",
+					"CACHE_TYPE" => "A",
+					"CACHE_TIME" => "3600",
+					"CACHE_FILTER" => "Y",
+					"CACHE_GROUPS" => "Y",
+					"DISPLAY_TOP_PAGER" => "Y",
+					"DISPLAY_BOTTOM_PAGER" => "Y",
+					"PAGER_TITLE" => "Новости",
+					"PAGER_SHOW_ALWAYS" => "Y",
+					"PAGER_TEMPLATE" => "",
+					"PAGER_DESC_NUMBERING" => "Y",
+					"PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
+					"PAGER_SHOW_ALL" => "Y",
+					"PAGER_BASE_LINK_ENABLE" => "Y",
+					"SET_STATUS_404" => "Y",
+					"SHOW_404" => "Y",
+					"MESSAGE_404" => "",
+					"PAGER_BASE_LINK" => "",
+					"PAGER_PARAMS_NAME" => "arrPager",
+					"AJAX_OPTION_JUMP" => "N",
+					"AJAX_OPTION_STYLE" => "Y",
+					"AJAX_OPTION_HISTORY" => "N",
+					"AJAX_OPTION_ADDITIONAL" => ""
+					)
+				);?>
 			</div>
 			<div class="jotun-examples">
 				<h4 class="jotun-examples__title">Примеры использования</h4>
-				<div class="row">
-					<div class="col-lg-4 col-xl-4">
-						<div class="jotun-examples__item"><img src="../images/jotun/example-jotun-img-1.jpg" alt="Пример использования 1"/>
-							<h6 class="jotun-examples__item__text">Подразделение морских покрытий Jotun (Jotun Marine Coatings) является мировым лидером по обеспечению судовладельческих и судоремонтных компаний морскими покрытиями.</h6>
-						</div>
-					</div>
-					<div class="col-lg-4 col-xl-4">
-						<div class="jotun-examples__item"><img src="../images/jotun/example-jotun-img-2.jpg" alt="Пример использования 2"/>
-							<h6 class="jotun-examples__item__text">Подразделение промышленных покрытий Jotun (Jotun Protective Coatings) обеспечивает защиту металлоконструкций и ссоружений в таких отраслях, как энергетика, инфраструктура, нефть и газ, и других отраслях промышленности.</h6>
-						</div>
-					</div>
-					<div class="col-lg-4 col-xl-4">
-						<div class="jotun-examples__item"><img src="../images/jotun/example-jotun-img-3.jpg" alt="Пример использования 3"/>
-							<h6 class="jotun-examples__item__text">Подразделение порошковых покрытий Jotun (Jotun Powder Coatings) - лидирующий поставщик порошковых покрытий для производителей бытовой техники, мебели и мебельной фурнитуры, строительных конструкций, трубопроводов.</h6>
-						</div>
-					</div>
-				</div>
+				<?$APPLICATION->IncludeComponent("bitrix:news.list","jotun_examples",Array(
+					"DISPLAY_DATE" => "Y",
+					"DISPLAY_NAME" => "Y",
+					"DISPLAY_PICTURE" => "Y",
+					"DISPLAY_PREVIEW_TEXT" => "Y",
+					"AJAX_MODE" => "Y",
+					"IBLOCK_TYPE" => "main",
+					"IBLOCK_ID" => "5",
+					"NEWS_COUNT" => "20",
+					"SORT_BY1" => "ID",
+					"SORT_ORDER1" => "ASC",
+					"SORT_BY2" => "SORT",
+					"SORT_ORDER2" => "ASC",
+					"FILTER_NAME" => "",
+					"FIELD_CODE" => Array("PREVIEW_TEXT","PREVIEW_PICTURE"),
+					"PROPERTY_CODE" => Array(),
+					"CHECK_DATES" => "Y",
+					"DETAIL_URL" => "",
+					"PREVIEW_TRUNCATE_LEN" => "",
+					"ACTIVE_DATE_FORMAT" => "d.m.Y",
+					"SET_TITLE" => "N",
+					"SET_BROWSER_TITLE" => "Y",
+					"SET_META_KEYWORDS" => "Y",
+					"SET_META_DESCRIPTION" => "Y",
+					"SET_LAST_MODIFIED" => "Y",
+					"INCLUDE_IBLOCK_INTO_CHAIN" => "Y",
+					"ADD_SECTIONS_CHAIN" => "Y",
+					"HIDE_LINK_WHEN_NO_DETAIL" => "Y",
+					"PARENT_SECTION" => "2",
+					"PARENT_SECTION_CODE" => "",
+					"INCLUDE_SUBSECTIONS" => "Y",
+					"CACHE_TYPE" => "A",
+					"CACHE_TIME" => "3600",
+					"CACHE_FILTER" => "Y",
+					"CACHE_GROUPS" => "Y",
+					"DISPLAY_TOP_PAGER" => "Y",
+					"DISPLAY_BOTTOM_PAGER" => "Y",
+					"PAGER_TITLE" => "Новости",
+					"PAGER_SHOW_ALWAYS" => "Y",
+					"PAGER_TEMPLATE" => "",
+					"PAGER_DESC_NUMBERING" => "Y",
+					"PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
+					"PAGER_SHOW_ALL" => "Y",
+					"PAGER_BASE_LINK_ENABLE" => "Y",
+					"SET_STATUS_404" => "Y",
+					"SHOW_404" => "Y",
+					"MESSAGE_404" => "",
+					"PAGER_BASE_LINK" => "",
+					"PAGER_PARAMS_NAME" => "arrPager",
+					"AJAX_OPTION_JUMP" => "N",
+					"AJAX_OPTION_STYLE" => "Y",
+					"AJAX_OPTION_HISTORY" => "N",
+					"AJAX_OPTION_ADDITIONAL" => ""
+					)
+				);?>
 			</div>
 		</div>
 	</div>
