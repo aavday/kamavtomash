@@ -5,3 +5,7 @@
 .header__contact__select div {
     display: inline;
 }
+
+.bx-composite-btn {
+    display: none !important;
+}
