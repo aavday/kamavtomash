@@ -9,3 +9,7 @@
 .bx-composite-btn {
     display: none !important;
 }
+
+body {
+    overflow-x:hidden;
+}
