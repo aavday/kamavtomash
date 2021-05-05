@@ -21,6 +21,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
 
     $headers = "MIME-Version: 1.0" . "\r\n";
     $headers .= "Content-type: text/html; charset=utf-8" . "\r\n";
+    $headers .= "From: КамАвтоМаш <no-reply@" . $_SERVER[HTTP_HOST] . ">" . "\r\n";
 
     mail($to, $subject, $message, $headers);
 
