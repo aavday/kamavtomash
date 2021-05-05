@@ -19,7 +19,7 @@ $APPLICATION->SetTitle('Главная');
       <section class="about">
         <div class="container">
           <div class="about__wrapper">
-            <a class="subtitle" href="#">О компании</a>
+            <a class="subtitle" href="/about/">О компании</a>
             <div class="row">
               <div class="col-xl-6">
                 <?$APPLICATION->IncludeComponent("bitrix:main.include","",Array(
@@ -99,7 +99,7 @@ $APPLICATION->SetTitle('Главная');
           <div class="container"> 
             <div class="row">
               <div class="col-lg-6 offset-xl-1 col-xl-5">
-                <a class="subtitle" href="#">Jotun</a>
+                <a class="subtitle" href="/jotun/">Jotun</a>
                 <?$APPLICATION->IncludeComponent("bitrix:main.include","",Array(
                     "AREA_FILE_SHOW" => "file",
                     "PATH" => "/includes/main_page/brands/first_brand_text.html"
@@ -113,7 +113,7 @@ $APPLICATION->SetTitle('Главная');
           <div class="container"> 
             <div class="row">
               <div class="offset-lg-6 col-lg-6 offset-xl-6 col-xl-6">
-                <a class="subtitle" href="#">Огнезащита Декотерм</a>
+                <a class="subtitle" href="/decoterm/">Огнезащита Декотерм</a>
                 <?$APPLICATION->IncludeComponent("bitrix:main.include","",Array(
                     "AREA_FILE_SHOW" => "file",
                     "PATH" => "/includes/main_page/brands/second_brand_text.html"
