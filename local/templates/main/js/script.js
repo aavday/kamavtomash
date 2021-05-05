@@ -92,10 +92,33 @@ function sliders() {
             },
         },
     });
+    $("#other-slider").owlCarousel({
+        loop: false,
+        margin: 30,
+        nav: true,
+        navText: ["", ""],
+        dots: false,
+        items: 4,
+        autoplay: false,
+        responsive: {
+            0: {
+                items: 1,
+                dots: true,
+            },
+            768: {
+                items: 2,
+            },
+            1200: {
+                items: 4,
+            },
+        },
+    });
 }
 
 function yandexMap() {
     try {
+        let iconUrl = location.origin + "/local/html/images/icons/map-icon.png";
+
         if ($(window).width() <= 992) {
             ymaps.ready(() => {
                 const myMap = new ymaps.Map("map-card", {
@@ -112,7 +135,7 @@ function yandexMap() {
                         // Опции.
                         iconLayout: "default#image",
                         // Своё изображение иконки метки.
-                        iconImageHref: "/local/templates/main/images/icons/map-icon.png",
+                        iconImageHref: iconUrl,
                         // Размеры метки.
                         iconImageSize: [94, 81],
                         // Смещение левого верхнего угла иконки относительно
@@ -139,7 +162,7 @@ function yandexMap() {
                         // Опции.
                         iconLayout: "default#image",
                         // Своё изображение иконки метки.
-                        iconImageHref: "images/icons/map-icon.png",
+                        iconImageHref: iconUrl,
                         // Размеры метки.
                         iconImageSize: [94, 81],
                         // Смещение левого верхнего угла иконки относительно
