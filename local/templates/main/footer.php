@@ -117,5 +117,28 @@ if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) die;
         </div>
       </div>
     </div>
+    <div class="modal modal-town modal-contact fade" id="messageModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <form action class="message-form">
+            <div class="modal-header">
+              <h5 class="modal-title" id="contactModalLabel">Оставить сообщение</h5>
+              <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body">
+              <input class="form-control" type="text" placeholder="Ваше имя" required="required" id="name" name="Имя"/>
+              <input class="form-control" type="text" placeholder="Номер телефона" required="required" id="phone" name="Телефон"/>
+              <textarea class="form-control" type="text" placeholder="Ваше сообщение" id="city" name="Сообщение"></textarea>
+              <div class="checkbox">
+                <input type="checkbox" id="check" name="check" required="required"/>
+                <label for="check">Я согласен на обработку персональных данных</label>
+              </div>
+              <button class="btn-submit" type="submit">Оставить сообщение</button>
+            </div>
+            <input type="hidden" id="subject" name="subject" value="Сообщение">
+          </form>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
