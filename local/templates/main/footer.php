@@ -183,5 +183,47 @@ if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) die;
         </div>
       </div>
     </div>
+    <div class="modal modal-town modal-contact fade" id="consultModal" tabindex="-1" aria-labelledby="consultModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <form action class="consult-request">
+            <div class="modal-header">
+              <h5 class="modal-title" id="consultModalLabel">Заказать консультацию</h5>
+              <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body">
+              <input class="form-control" type="text" placeholder="Ваше имя" required="required" id="name" name="Имя"/>
+              <input class="form-control" type="text" placeholder="Номер телефона" required="required" id="phone" name="Телефон"/>
+              <input class="form-control" type="text" placeholder="Ваш город" id="city" name="Город"/>
+              <p class="modal-time__title">Укажите удобное время для звонка:</p>
+              <div class="modal-time">
+                <input type="text" id="from__time-2" name="time_from" readonly="readonly"/>
+                <input type="text" id="to__time-2" name="time_by" readonly="readonly"/>
+                <div id="slider-range-2"></div>
+              </div>
+              <div class="checkbox">
+                <input type="checkbox" id="check" name="check" required="required"/>
+                <label for="check">Я согласен на обработку персональных данных</label>
+              </div>
+              <button class="btn-submit" type="submit">Заказать консультацию</button>
+            </div>
+            <input type="hidden" id="subject" name="subject" value="Заказ консультации">
+            <input type="hidden" id="product" name="Товар" value="<?=$APPLICATION->ShowTitle(false)?>">
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="modal modal-video fade" id="videoModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog">
+            <div class="modal-content">
+          <div class="modal-header">
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body">
+            <iframe width="100%" height="100%" src="<?=$GLOBALS["video"]?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

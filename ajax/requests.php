@@ -37,7 +37,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
         'UF_CITY' => $_POST['Город'],
         'UF_CREATED_AT' => date('d.m.Y H:i:s'),
         'UF_TIME_FROM' => $_POST['time_from'],
-        'UF_TIME_BY' => $_POST['time_by']
+        'UF_TIME_BY' => $_POST['time_by'],
+        'UF_PRODUCT' => $_POST['Товар']
     );
 
     $entity_data_class::add($fields);

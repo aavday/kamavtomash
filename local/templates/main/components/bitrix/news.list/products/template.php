@@ -9,7 +9,7 @@ if (!empty($arResult)):
                 <?$this->AddEditAction($arItem['ID'], $arItem['EDIT_LINK'], CIBlock::GetArrayByID($arItem['IBLOCK_ID'], 'ELEMENT_EDIT'))?>
                 <?$this->AddDeleteAction($arItem['ID'], $arItem['DELETE_LINK'], CIBlock::GetArrayByID($arItem['IBLOCK_ID'], 'ELEMENT_DELETE'))?>
                 <div class="col-md-12 col-lg-6 col-xl-4">
-                    <a class="decoterm-page__item" href="#" id="<?=$this->GetEditAreaId($arItem['ID'])?>">
+                    <a class="decoterm-page__item" href="<?=$arItem['DETAIL_PAGE_URL']?>" id="<?=$this->GetEditAreaId($arItem['ID'])?>">
                         <div class="decoterm-page__item__img">
                             <img src="<?=CFile::GetPath($arItem["PREVIEW_PICTURE"]["ID"])?>" alt="Картинка продукта <?$i?>"/>
                         </div>
