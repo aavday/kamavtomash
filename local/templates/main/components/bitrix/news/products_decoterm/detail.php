@@ -169,16 +169,7 @@
 				)
 			);?>
 		</div>
-		<div class="callback">
-			<div class="row">
-				<div class="offset-md-4 col-md-8 offset-lg-3 col-lg-9 offset-xl-6 col-xl-6">
-					<h3 class="callback__title">Сомневаетесь с выбором?</h3>
-					<h6 class="callback__text">Закажите звонок или оставьте сообщение. Наш менеджер свяжется с Вами и проконсультирует по любому вопросу!</h6>
-					<button class="callback__btn" data-toggle="modal" data-target="#messageModal">Оставить сообщение</button>
-					<button class="callback__btn" data-toggle="modal" data-target="#contactModal">заказать звонок</button>
-				</div>
-			</div>
-		</div>
+		<?include_once $_SERVER["DOCUMENT_ROOT"] . '/includes/callback.html'?>
     </div>
 </div>
 <?$APPLICATION->IncludeComponent("bitrix:news.detail","contacts",Array(
