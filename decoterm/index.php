@@ -95,7 +95,7 @@
 	"POST_FIRST_MESSAGE" => "Y",
 	"SEF_FOLDER" => "/decoterm/",
 	"SEF_URL_TEMPLATES" => Array(
-		"detail" => "#ELEMENT_ID#/",
+		"detail" => "#ELEMENT_CODE#/",
 		"news" => "",
 		"section" => "",
 	),
