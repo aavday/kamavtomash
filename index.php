@@ -149,7 +149,7 @@ $APPLICATION->SetTitle('Главная');
       <section class="project">
         <div class="container"> 
           <div class="project__wrapper">
-            <a class="subtitle" href="#">Проекты</a>
+            <a class="subtitle" href="/proekty/">Проекты</a>
             <?$APPLICATION->IncludeComponent("bitrix:news.list","projects",Array(
               "DISPLAY_DATE" => "Y",
               "DISPLAY_NAME" => "Y",
