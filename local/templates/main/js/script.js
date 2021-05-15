@@ -115,70 +115,6 @@ function sliders() {
     });
 }
 
-function yandexMap() {
-    try {
-        let iconUrl = location.origin + "/local/html/images/icons/map-icon.png";
-
-        if ($(window).width() <= 992) {
-            ymaps.ready(() => {
-                const myMap = new ymaps.Map("map-card", {
-                    center: [55.747526, 52.372577],
-                    zoom: 16,
-                });
-                const myPlacemark = new ymaps.Placemark(
-                    [55.745088, 52.372374],
-                    {
-                        hintContent: "",
-                        balloonContent: "",
-                    },
-                    {
-                        // Опции.
-                        iconLayout: "default#image",
-                        // Своё изображение иконки метки.
-                        iconImageHref: iconUrl,
-                        // Размеры метки.
-                        iconImageSize: [94, 81],
-                        // Смещение левого верхнего угла иконки относительно
-                        // её "ножки" (точки привязки).
-                        iconImageOffset: [-40, -80],
-                    }
-                );
-                myMap.behaviors.disable("scrollZoom");
-                myMap.geoObjects.add(myPlacemark);
-            });
-        } else {
-            ymaps.ready(() => {
-                const myMap = new ymaps.Map("map-card", {
-                    center: [55.745374, 52.377037],
-                    zoom: 17,
-                });
-                const myPlacemark = new ymaps.Placemark(
-                    [55.745088, 52.372374],
-                    {
-                        hintContent: "",
-                        balloonContent: "",
-                    },
-                    {
-                        // Опции.
-                        iconLayout: "default#image",
-                        // Своё изображение иконки метки.
-                        iconImageHref: iconUrl,
-                        // Размеры метки.
-                        iconImageSize: [94, 81],
-                        // Смещение левого верхнего угла иконки относительно
-                        // её "ножки" (точки привязки).
-                        iconImageOffset: [-45, -80],
-                    }
-                );
-                myMap.behaviors.disable("scrollZoom");
-                myMap.geoObjects.add(myPlacemark);
-            });
-        }
-    } catch (err) {
-        console.log(err);
-    }
-}
-
 function burgerIcon() {
     document.querySelector(".menu").addEventListener("click", function () {
         if ($(this).is(".active:not(.back)")) {
@@ -291,7 +227,6 @@ window.addEventListener("DOMContentLoaded", () => {
     lazyLoad();
     preloader();
     burgerIcon();
-    yandexMap();
     animation();
     choseTime();
 });

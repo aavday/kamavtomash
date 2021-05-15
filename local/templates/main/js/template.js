@@ -1,3 +1,84 @@
+const innerContactsMap = document.querySelector('.contacts-page');
+console.log(innerContactsMap);
+
+function yandexMap() {
+  const markXCoord = 55.745088;
+  const markYCoord = 52.372374;
+  let mobCenterXCoord = 55.747526;
+  let mobCenterYCoord = 52.372577;
+  let centerXCoord = 55.745374;
+  let centerYCoord =  52.377037;
+
+  if (innerContactsMap) {
+    mobCenterXCoord = markXCoord;
+    mobCenterYCoord = markYCoord;
+    centerXCoord = markXCoord;
+    centerYCoord =  markYCoord;
+  }
+
+  try {
+      let iconUrl = location.origin + "/local/templates/main/images/icons/map-icon.png";
+
+      if ($(window).width() <= 992) {
+          ymaps.ready(() => {
+              const myMap = new ymaps.Map("map-card", {
+                  center: [mobCenterXCoord, mobCenterYCoord],
+                  zoom: 16,
+              });
+              const myPlacemark = new ymaps.Placemark(
+                  [markXCoord, markYCoord],
+                  {
+                      hintContent: "",
+                      balloonContent: "",
+                  },
+                  {
+                      // Опции.
+                      iconLayout: "default#image",
+                      // Своё изображение иконки метки.
+                      iconImageHref: iconUrl,
+                      // Размеры метки.
+                      iconImageSize: [94, 81],
+                      // Смещение левого верхнего угла иконки относительно
+                      // её "ножки" (точки привязки).
+                      iconImageOffset: [-40, -80],
+                  }
+              );
+              myMap.behaviors.disable("scrollZoom");
+              myMap.geoObjects.add(myPlacemark);
+          });
+      } else {
+          ymaps.ready(() => {
+              const myMap = new ymaps.Map("map-card", {
+                  center: [centerXCoord, centerYCoord],
+                  zoom: 17,
+              });
+              const myPlacemark = new ymaps.Placemark(
+                  [markXCoord, markYCoord],
+                  {
+                      hintContent: "",
+                      balloonContent: "",
+                  },
+                  {
+                      // Опции.
+                      iconLayout: "default#image",
+                      // Своё изображение иконки метки.
+                      iconImageHref: iconUrl,
+                      // Размеры метки.
+                      iconImageSize: [94, 81],
+                      // Смещение левого верхнего угла иконки относительно
+                      // её "ножки" (точки привязки).
+                      iconImageOffset: [-45, -80],
+                  }
+              );
+              myMap.behaviors.disable("scrollZoom");
+              myMap.geoObjects.add(myPlacemark);
+          });
+      }
+  } catch (err) {
+      console.log(err);
+  }
+}
+
 function choseTimeSecond() {
   $("#slider-range-2").slider({
       range: true,
@@ -16,7 +97,8 @@ function choseTimeSecond() {
 }
 
 window.addEventListener("DOMContentLoaded", () => {
-  choseTimeSecond();;
+  choseTimeSecond();
+  yandexMap();
 });
 
 $(function() {
