@@ -18,6 +18,10 @@ body {
   margin: 15px auto;
 }
 
+.product__links {
+  justify-content: space-evenly;
+}
+
 .modal-video .modal-dialog,
 .modal-video .modal-content {
     max-width: 97% !important;

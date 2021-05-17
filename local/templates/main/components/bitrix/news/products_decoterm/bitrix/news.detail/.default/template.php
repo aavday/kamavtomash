@@ -18,8 +18,6 @@
 				<div class="product__link__img"></div>
 				<h5 class="product__link__text"><span>Технологическая инструкция</span></h5>
 			</a>
-			<?else:?>
-			<div></div>
 			<?endif?>
 			<?
 			if ($arResult['video']):
@@ -28,16 +26,12 @@
 				<div class="product__link__img"></div>
 				<h5 class="product__link__text"><span>Смотреть<br> видео</span></h5>
 			</a>
-			<?else:?>
-			<div></div>
 			<?endif?>
 			<?if ($arResult['certificates']):?>
 			<a class="product__link link-3" href="<?=$arResult['certificates']?>">
 				<div class="product__link__img"></div>
 				<h5 class="product__link__text"><span>Сертификаты на продукцию</span></h5>
 			</a>
-			<?else:?>
-			<div></div>
 			<?endif?>
 		</div>
 		<?endif?>
