@@ -43,17 +43,15 @@
 		<h3 class="product__char-title">Технические характеристики</h3>
 		<ul class="product__char-list">
 			<?
-			for($i=1; $i<=8; $i++):
+			for($i=1; $i<=20; $i++):
 				if($arResult['DISPLAY_PROPERTIES']['PROPERTY_'.$i]['VALUE']):
 			?>
 				<li class="product__char-list__item">
 					<div class="product__char-list__left"><?=$arResult['DISPLAY_PROPERTIES']['PROPERTY_' . $i]['NAME']?></div>
 					<div class="product__char-list__right"><?=$arResult['DISPLAY_PROPERTIES']['PROPERTY_' . $i]['VALUE']?></div>
 				</li>
-			<?
-			endif;
-			endfor
-			?>
+				<?endif?>
+			<?endfor?>
 		</ul>
 	</div>
 </div>
