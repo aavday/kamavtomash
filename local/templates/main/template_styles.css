@@ -22,6 +22,14 @@ body {
   justify-content: space-evenly;
 }
 
+.project .container {
+  padding: 0;
+}
+
+.inside-page .project__item__list p {
+  margin: 0;
+}
+
 .modal-video .modal-dialog,
 .modal-video .modal-content {
     max-width: 100% !important;
