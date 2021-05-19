@@ -16,7 +16,7 @@ $APPLICATION->SetTitle("Проекты");
       "AJAX_MODE" => "Y",
       "IBLOCK_TYPE" => "main",
       "IBLOCK_ID" => "1",
-      "NEWS_COUNT" => "20",
+      "NEWS_COUNT" => "99",
       "SORT_BY1" => "ID",
       "SORT_ORDER1" => "ASC",
       "SORT_BY2" => "SORT",
