@@ -30,6 +30,20 @@ body {
   margin: 0;
 }
 
+.modal-instructions .modal-dialog,
+.modal-certificates .modal-dialog {
+  text-align: center;
+  top: 35%;
+}
+
+@media(min-width: 577px) {
+  .modal-instructions .modal-dialog,
+  .modal-certificates .modal-dialog {
+    max-width: 200px;
+  }
+}
+
+
 .modal-video .modal-dialog,
 .modal-video .modal-content {
     max-width: 100% !important;

@@ -10,14 +10,21 @@
 			<img class="img-1" src="<?=CFile::GetPath($arResult['DETAIL_PICTURE']['ID'])?>" alt="Картинка краски"/>
 		</div>
 		<?
-		if ($arResult['instruction'] || $arResult['video'] || $arResult['certificates']):
+		if ($arResult['instructions'] || $arResult['video'] || $arResult['certificates']):
 		?>
 		<div class="product__links">
-			<?if ($arResult['instruction']):?>
-			<a class="product__link link-1" href="<?=$arResult['instruction']?>">
-				<div class="product__link__img"></div>
-				<h5 class="product__link__text"><span>Технологическая инструкция</span></h5>
-			</a>
+			<?if($GLOBALS['instructions']):?>
+				<?if (count($GLOBALS['instructions']) == 1):?>
+				<a class="product__link link-1" href="<?=$GLOBALS['instructions'][0]?>">
+					<div class="product__link__img"></div>
+					<h5 class="product__link__text"><span>Технологическая инструкция</span></h5>
+				</a>
+				<?else:?>
+				<a class="product__link link-1" data-toggle="modal" data-target="#instructionsModal">
+					<div class="product__link__img"></div>
+					<h5 class="product__link__text"><span>Технологическая инструкция</span></h5>
+				</a>
+				<?endif?>
 			<?endif?>
 			<?
 			if ($arResult['video']):
@@ -27,11 +34,18 @@
 				<h5 class="product__link__text"><span>Смотреть<br> видео</span></h5>
 			</a>
 			<?endif?>
-			<?if ($arResult['certificates']):?>
-			<a class="product__link link-3" href="<?=$arResult['certificates']?>">
-				<div class="product__link__img"></div>
-				<h5 class="product__link__text"><span>Сертификаты на продукцию</span></h5>
-			</a>
+			<?if($GLOBALS['certificates']):?>
+				<?if (count($GLOBALS['certificates']) == 1):?>
+				<a class="product__link link-3" href="<?=$GLOBALS['certificates'][0]?>">
+					<div class="product__link__img"></div>
+					<h5 class="product__link__text"><span>Сертификаты на продукцию</span></h5>
+				</a>
+				<?else:?>
+				<a class="product__link link-3" data-toggle="modal" data-target="#certificatesModal">
+					<div class="product__link__img"></div>
+					<h5 class="product__link__text"><span>Сертификаты на продукцию</span></h5>
+				</a>
+				<?endif?>
 			<?endif?>
 		</div>
 		<?endif?>

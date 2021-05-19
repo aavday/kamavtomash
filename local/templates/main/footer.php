@@ -225,5 +225,37 @@ if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) die;
         </div>
       </div>
     </div>
+    <?if($GLOBALS['instructions']):?>
+    <div class="modal modal-instructions fade" id="instructionsModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog">
+            <div class="modal-content">
+          <div class="modal-header">
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body">
+            <?foreach ($GLOBALS['instructions'] as $key => $instruction):?>
+            <a href="<?=$instruction?>">Инструкция <?=$key + 1?></a></br>
+            <?endforeach?>
+          </div>
+        </div>
+      </div>
+    </div>
+    <?endif?>
+    <?if($GLOBALS['certificates']):?>
+    <div class="modal modal-certificates fade" id="certificatesModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog">
+            <div class="modal-content">
+          <div class="modal-header">
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body">
+            <?foreach ($GLOBALS['certificates'] as $key => $instruction):?>
+            <a href="<?=$instruction?>">Сертификат <?=$key + 1?></a></br>
+            <?endforeach?>
+          </div>
+        </div>
+      </div>
+    </div>
+    <?endif?>
   </body>
 </html>

@@ -1,5 +1,18 @@
 <?
-$arResult['instruction'] = CFile::GetPath($arResult['DISPLAY_PROPERTIES']['INSTRUCTION']['VALUE']);
+$i = 0;
+foreach($arResult['DISPLAY_PROPERTIES']['INSTRUCTIONS']['VALUE'] as $instruction)
+{
+    $GLOBALS['instructions'][$i] = CFile::GetPath($instruction);
+    $i++;
+}
+
+$i = 0;
+foreach($arResult['DISPLAY_PROPERTIES']['CERTIFICATES']['VALUE'] as $instruction)
+{
+    $GLOBALS['certificates'][$i] = CFile::GetPath($instruction);
+    $i++;
+}
+
 $video = $arResult['DISPLAY_PROPERTIES']['VIDEO']['VALUE'];
 $arResult['certificates'] = CFile::GetPath($arResult['DISPLAY_PROPERTIES']['CERTIFICATES']['VALUE']);
 
