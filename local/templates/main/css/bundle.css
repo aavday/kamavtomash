@@ -1564,28 +1564,28 @@ html {
 
 @font-face {
   font-family: SegoeUI;
-  src: url("../fonts/SegoeUI/SegoeUI-Light.ttf") format("truetype");
+  src: url("../fonts/SegoeUI/SegoeUI-Light-min.woff") format("truetype");
   font-weight: 300;
   font-display: block;
   font-style: normal; }
 
 @font-face {
   font-family: SegoeUI;
-  src: url("../fonts/SegoeUI/SegoeUI.ttf") format("truetype");
+  src: url("../fonts/SegoeUI/SegoeUI-min.woff") format("truetype");
   font-weight: 400;
   font-display: block;
   font-style: normal; }
 
 @font-face {
   font-family: SegoeUI;
-  src: url("../fonts/SegoeUI/SegoeUI-Bold.ttf") format("truetype");
+  src: url("../fonts/SegoeUI/SegoeUI-Bold-min.woff") format("truetype");
   font-weight: 700;
   font-display: block;
   font-style: normal; }
 
 @font-face {
   font-family: MyriadProBold;
-  src: url("../fonts/MyriadPro-Bold.ttf") format("truetype");
+  src: url("../fonts/MyriadPro-Bold-min.woff") format("truetype");
   font-weight: 700;
   font-display: block;
   font-style: normal; }
