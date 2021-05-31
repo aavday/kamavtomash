@@ -1,5 +1,4 @@
 const innerContactsMap = document.querySelector('.contacts-page');
-console.log(innerContactsMap);
 
 function yandexMap() {
   const markXCoord = 55.745088;
