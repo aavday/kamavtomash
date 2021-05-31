@@ -17,7 +17,10 @@ if (!empty($arResult)):
 			</div>
 		</div>
 		<div class="map">
-			<div id="map-card"></div>
+			<div class="ymap-container">
+				<div class="loader loader-default"></div>
+				<div id="map-yandex"></div>
+			</div>
 		</div>
 	</section>
 <?endif?>
