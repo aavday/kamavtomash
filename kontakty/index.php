@@ -56,7 +56,7 @@ $APPLICATION->SetTitle("Контакты");
 		"GROUP_PERMISSIONS" => array(
 			0 => "1",
 		),
-		"CACHE_TYPE" => "A",
+		"CACHE_TYPE" => "N",
 		"CACHE_TIME" => "3600",
 		"CACHE_GROUPS" => "Y",
 		"DISPLAY_TOP_PAGER" => "Y",
