@@ -4,7 +4,9 @@
         <?foreach ($arResult["ITEMS"] as $arItem):?>
             <?$this->AddEditAction($arItem['ID'], $arItem['EDIT_LINK'], CIBlock::GetArrayByID($arItem['IBLOCK_ID'], 'ELEMENT_EDIT'))?>
             <?$this->AddDeleteAction($arItem['ID'], $arItem['DELETE_LINK'], CIBlock::GetArrayByID($arItem['IBLOCK_ID'], 'ELEMENT_DELETE'))?>
-            <li id="<?=$this->GetEditAreaId($arItem['ID'])?>"><a class="modal-town__link" href="#"><?=$arItem["NAME"]?></a></li>
+            <?if ($arItem["CODE"]) $alias = $arItem["CODE"] . '.'?>
+
+            <li id="<?=$this->GetEditAreaId($arItem['ID'])?>"><a class="modal-town__link" href="http://<?=$alias . 'kamash.ru/' ?>"><?=$arItem["NAME"]?></a></li>
         <?endforeach?>
     </ul>
 <?endif?>

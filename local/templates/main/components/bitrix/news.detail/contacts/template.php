@@ -7,7 +7,7 @@ if (!empty($arResult)):
 			<div class="contact__block">
 				<h3 class="contact__block__title">Контакты</h3>
 				<div class="contact__block__town">
-					<a class="contact__block__town__select" data-toggle="modal" data-target="#selectTownModal"><?=$arResult['DISPLAY_PROPERTIES']['CITY']['VALUE']?></a><br/>
+					<a class="contact__block__town__select" data-toggle="modal" data-target="#selectTownModal"><?=$arResult['NAME']?></a><br/>
 					<p class="contact__block__town__text"><?=$arResult['DISPLAY_PROPERTIES']['ADDRESS']['VALUE']?></p>
 				</div>
 				<a class="contact__block__phone" href="tel:<?=$arResult['DISPLAY_PROPERTIES']['PHONE_1']['VALUE']?>"><?=$arResult['DISPLAY_PROPERTIES']['PHONE_1']['VALUE']?></a><br>

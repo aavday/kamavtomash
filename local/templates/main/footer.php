@@ -72,6 +72,10 @@ if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) die;
             <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
           </div>
           <div class="modal-body">
+            <?
+            global $arFilter;
+            $arFilter = array('!ID'=>$elementId);
+            ?>
             <?$APPLICATION->IncludeComponent("bitrix:news.list","cities",Array(
               "DISPLAY_DATE" => "Y",
               "DISPLAY_NAME" => "Y",
@@ -85,7 +89,7 @@ if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) die;
               "SORT_ORDER1" => "ASC",
               "SORT_BY2" => "SORT",
               "SORT_ORDER2" => "ASC",
-              "FILTER_NAME" => "",
+              "FILTER_NAME" => "arFilter",
               "FIELD_CODE" => Array("NAME"),
               "PROPERTY_CODE" => Array(),
               "CHECK_DATES" => "Y",

@@ -66,6 +66,7 @@ $APPLICATION->SetTitle("Проекты");
     </div>
 	</div>
 </div>
+<?global $elementId;?>
 <?$APPLICATION->IncludeComponent("bitrix:news.detail","contacts",Array(
   "DISPLAY_DATE" => "Y",
   "DISPLAY_NAME" => "Y",
@@ -79,8 +80,8 @@ $APPLICATION->SetTitle("Проекты");
   "SHARE_SHORTEN_URL_KEY" => "",
   "AJAX_MODE" => "Y",
   "IBLOCK_TYPE" => "main",
-  "IBLOCK_ID" => "9",
-  "ELEMENT_ID" => "90",
+  "IBLOCK_ID" => "2",
+  "ELEMENT_ID" => $elementId,
   "ELEMENT_CODE" => "",
   "CHECK_DATES" => "Y",
   "FIELD_CODE" => Array(""),

@@ -2,6 +2,7 @@
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Контакты");
 ?>
+<?global $elementId;?>
 <?$APPLICATION->IncludeComponent(
 	"bitrix:news.detail", 
 	"contacts_inner", 
@@ -20,18 +21,17 @@ $APPLICATION->SetTitle("Контакты");
 		"SHARE_SHORTEN_URL_KEY" => "",
 		"AJAX_MODE" => "Y",
 		"IBLOCK_TYPE" => "main",
-		"IBLOCK_ID" => "9",
-		"ELEMENT_ID" => "90",
+		"IBLOCK_ID" => "2",
+		"ELEMENT_ID" => $elementId,
 		"ELEMENT_CODE" => "",
 		"CHECK_DATES" => "Y",
 		"FIELD_CODE" => array(
-			0 => "",
+			0 => "NAME",
 			1 => "",
 		),
 		"PROPERTY_CODE" => array(
 			0 => "EMAIL",
 			1 => "ADDRESS",
-			2 => "CITY",
 			3 => "PHONE_1",
 			4 => "PHONE_2",
 			5 => "",

@@ -208,6 +208,7 @@ $APPLICATION->SetTitle('Главная');
           </div>
         </div>
       </section>
+      <?global $elementId;?>
       <?$APPLICATION->IncludeComponent("bitrix:news.detail","contacts",Array(
         "DISPLAY_DATE" => "Y",
         "DISPLAY_NAME" => "Y",
@@ -221,12 +222,12 @@ $APPLICATION->SetTitle('Главная');
         "SHARE_SHORTEN_URL_KEY" => "",
         "AJAX_MODE" => "Y",
         "IBLOCK_TYPE" => "main",
-        "IBLOCK_ID" => "9",
-        "ELEMENT_ID" => "90",
+        "IBLOCK_ID" => "2",
+        "ELEMENT_ID" => $elementId,
         "ELEMENT_CODE" => "",
         "CHECK_DATES" => "Y",
-        "FIELD_CODE" => Array(""),
-        "PROPERTY_CODE" => Array("CITY", "ADDRESS", "PHONE_1", "PHONE_2", "EMAIL"),
+        "FIELD_CODE" => Array("NAME"),
+        "PROPERTY_CODE" => Array("ADDRESS", "PHONE_1", "PHONE_2", "EMAIL"),
         "IBLOCK_URL" => "news.php?ID=#IBLOCK_ID#\"",
         "DETAIL_URL" => "",
         "SET_TITLE" => "N",
