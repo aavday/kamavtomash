@@ -1,6 +1,9 @@
 <?
 require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
-$APPLICATION->SetTitle('Главная');
+$APPLICATION->SetPageProperty("title", "Антикоррозийные краски, материалы, покрытия в {{ name2 }}");
+$APPLICATION->SetPageProperty("keywords", "антикоррозийные покрытия, антикоррозийные материалы, антикоррозионные краски, антикоррозийные покрытия, {{ name3 }}");
+$APPLICATION->SetPageProperty("description", "Купить антикоррозийные краски, материалы, покрытия в {{ name2 }} в компании КамАвтоМаш. Цены на антикоррозионные покрытия по металлу.");
+$APPLICATION->SetTitle("Антикоррозийные краски, материалы, покрытия в {{ name2 }}");
 ?> 
       <section class="greeting">
         <div class="container"> 

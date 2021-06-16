@@ -17,7 +17,7 @@ function convertMetaTags()
   $meta_tags = array(
     'title' => $APPLICATION->GetProperty('title'),
     'description' => $APPLICATION->GetProperty('description'),
-    'keywords' => $APPLICATION->GetProperty('keywords')
+    'keywords' => $APPLICATION->GetProperty('keywords'),
   );
 
 

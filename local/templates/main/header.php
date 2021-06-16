@@ -6,11 +6,12 @@ global $USER;
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <? $APPLICATION->ShowHead();  ?>
+    <?$APPLICATION->AddBufferContent('convertMetaTags');?>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-    <title><? $APPLICATION->ShowTitle(false); ?></title>
+    <title><? $APPLICATION->ShowTitle(); ?></title>
+    <? $APPLICATION->ShowHead();  ?>
     <link rel="preload" href="<?=SITE_TEMPLATE_PATH?>/fonts/SegoeUI/SegoeUI-min.woff" as="font" type="font/woff" crossorigin="anonymous">
     <link rel="preload" href="<?=SITE_TEMPLATE_PATH?>/fonts/SegoeUI/SegoeUI-Bold-min.woff" as="font" type="font/woff" crossorigin="anonymous">
     <link rel="preload" href="<?=SITE_TEMPLATE_PATH?>/fonts/SegoeUI/SegoeUI-Light-min.woff" as="font" type="font/woff" crossorigin="anonymous">
