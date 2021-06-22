@@ -21,7 +21,6 @@ global $USER;
     <? Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/libs/js-libs.min.js") ?>
     <? Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/js/script.min.js") ?>
     <? Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/js/template.js") ?>
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=eff7a67d-abe4-44c8-ad01-4221d11c84ea&amp;lang=ru_RU"></script>
   </head>
   <body>
       <? if($GLOBALS["USER"]->IsAuthorized()): ?>
